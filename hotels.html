@@ -24,7 +24,7 @@
           <h2 class="visually-hidden">Фильтры выбора</h2>
             <form class="form-filters" method="get" action="https://echo.htmlacademy.ru" oninput="priceoutput.value=price.value">
               <fieldset>
-                <legend>Инфраструктура:</legend>
+                <legend class="title-white">Инфраструктура:</legend>
                 <ul class="infrastructure">
                   <li class="filter-option"><input type="checkbox" name="swimming-pool" checked>Бассейн</li>
                   <li class="filter-option"><input type="checkbox" name="parking">Парковка</li>
@@ -32,7 +32,7 @@
                 </ul>
               </fieldset>
               <fieldset>
-                <legend>Тип жилья:</legend>
+                <legend class="title-white">Тип жилья:</legend>
                 <ul class="infrastructure">
                   <li class="filter-option"><input type="checkbox" name="hotel" checked>Гостиница</li>
                   <li class="filter-option"><input type="checkbox" name="motel" checked>Мотель</li>
@@ -40,9 +40,9 @@
                 </ul>
               </fieldset>
               <fieldset class="price-per-day">
-                <legend>Стоимость в сутки (Р):</legend>
+                <legend class="title-white">Стоимость в сутки (Р):</legend>
                 <p>От 0 до <output name="priceoutput">3000</output></p>
-                <p><input type="range" min="0" max="4000" name="price" value="3000"></p>
+                <p><input type="range" min="0" max="4000" step="100" name="price" value="3000"></p>
                 <input type="submit" value="Показать">
               </fieldset>
             </form>
@@ -55,13 +55,13 @@
             <li class="filter-option"><a href="#"> По типу</li>
             <li class="filter-option"><a href="#"> По рейтингу</li>
           </ul>
-          <a href="#" class="scroll-up"><img src="http://placehold.it/25x25" width="25" height="25" alt="вверх"></a>
-          <a href="#" class="scroll-down active"><img src="http://placehold.it/25x25" width="25" height="25" alt="вниз"></a>
+          <a href="#" class="scroll-up"><img src="img/icon-up-dir.svg" width="11" height="10" alt="вверх"></a>
+          <a href="#" class="scroll-down active"><img src="img/icon-down-dir.svg" width="11" height="10" alt="вниз"></a>
         </section>
         <hr>
         <section class="hotel-card">
           <div class="hotel-image">
-            <img src="http://placehold.it/100x50" width="100" height="50" alt="Фото отеля">
+            <img src="img/amara-resort.jpg" width="135" height="90" alt="Фото отеля">
           </div>
           <div class="hotel-description">
             <h2 class="title">Amara Resort & Spa</h2>
@@ -71,10 +71,10 @@
           </div>
           <div class="hotel-class">
             <ul>
-              <li><img src="http://placehold.it/25x25" width="25" height="25" alt="*"></li>
-              <li><img src="http://placehold.it/25x25" width="25" height="25" alt="*"></li>
-              <li><img src="http://placehold.it/25x25" width="25" height="25" alt="*"></li>
-              <li><img src="http://placehold.it/25x25" width="25" height="25" alt="*"></li>
+              <li><img src="img/star.svg" width="20" height="20" alt="*"></li>
+              <li><img src="img/star.svg" width="20" height="20" alt="*"></li>
+              <li><img src="img/star.svg" width="20" height="20" alt="*"></li>
+              <li><img src="img/star.svg" width="20" height="20" alt="*"></li>
             </ul>
             <p><span class="hotel-rate">Рейтинг: 8.5</span></p>
           </div>
@@ -82,7 +82,7 @@
         <hr>
         <section class="hotel-card">
           <div class="hotel-image">
-            <img src="http://placehold.it/100x50" width="100" height="50" alt="Фото отеля">
+            <img src="img/desert-quail.jpg" width="135" height="90" alt="Фото отеля">
           </div>
           <div class="hotel-description">
             <h2 class="title">Desert Quail Inn</h2>
@@ -92,8 +92,8 @@
           </div>
           <div class="hotel-class">
             <ul>
-              <li><img src="http://placehold.it/25x25" width="25" height="25" alt="*"></li>
-              <li><img src="http://placehold.it/25x25" width="25" height="25" alt="*"></li>
+              <li><img src="img/star.svg" width="20" height="20" alt="*"></li>
+              <li><img src="img/star.svg" width="20" height="20" alt="*"></li>
             </ul>
             <p><span class="hotel-rate">Рейтинг: 8.9</span></p>
           </div>
@@ -101,7 +101,7 @@
         <hr>
         <section class="hotel-card">
           <div class="hotel-image">
-            <img src="http://placehold.it/100x50" width="100" height="50" alt="Фото отеля">
+            <img src="img/poco-diablo.jpg" width="135" height="90" alt="Фото отеля">
           </div>
           <div class="hotel-description">
             <h2 class="title">Villas At Poco Diablo</h2>
@@ -111,9 +111,9 @@
           </div>
           <div class="hotel-class">
             <ul>
-              <li><img src="http://placehold.it/25x25" width="25" height="25" alt="*"></li>
-              <li><img src="http://placehold.it/25x25" width="25" height="25" alt="*"></li>
-              <li><img src="http://placehold.it/25x25" width="25" height="25" alt="*"></li>
+              <li><img src="img/star.svg" width="20" height="20" alt="*"></li>
+              <li><img src="img/star.svg" width="20" height="20" alt="*"></li>
+              <li><img src="img/star.svg" width="20" height="20" alt="*"></li>
             </ul>
             <p><span class="hotel-rate">Рейтинг: 9.2</span></p>
           </div>
@@ -122,12 +122,12 @@
     <footer>
       <p><a href="#">#VISITSEDONA</a></p>
       <ul>
-        <li class="social-button"><a href="#"><img src="img/twitter.svg" width="50" height="50" alt="Твиттер"></a></li>
-        <li class="social-button"><a href="#"><img src="img/fb-icon.svg" width="50" height="50" alt="Facebook"></a></li>
-        <li class="social-button"><a href="#"><img src="img/youtube.svg" width="50" height="50" alt="YouTube"></a></li>
+        <li class="social-button"><a href="#"><img src="img/twitter.svg" width="46" height="48" alt="Твиттер"></a></li>
+        <li class="social-button"><a href="#"><img src="img/fb-icon.svg" width="46" height="48" alt="Facebook"></a></li>
+        <li class="social-button"><a href="#"><img src="img/youtube.svg" width="46" height="48" alt="YouTube"></a></li>
       </ul>
       <p class="footer-copyright">
-        <a href="https://htmlacademy.ru/" class="button"><img src="logo-htmlacademy.svg" alt="HTML Academy"></a>
+        Website by<a href="https://htmlacademy.ru/" class="button"><img src="img/logo-htmlacademy.svg" width="200" height="40" alt="HTML Academy"></a>
       </p>
     </footer>
   </body>

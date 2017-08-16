@@ -4,5 +4,11 @@ body {
     text-transform: uppercase;
 }
 .title {
+    font: bold 21px;
+    color: #000000;
+     
+}
+.title-white {    
     font: bold 21px; 
+    color: #ffffff;
 }
