@@ -1,3 +1,8 @@
 body {
-    font-family: PT Sans Narrow, sans-serif;
+    font: 18px/27px PT Sans, sans-serif;
+    color: #333333;
+    text-transform: uppercase;
+}
+.title {
+    font: bold 21px; 
 }
