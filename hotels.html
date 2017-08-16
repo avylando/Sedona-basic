@@ -24,7 +24,7 @@
           <h2 class="visually-hidden">Фильтры выбора</h2>
             <form class="form-filters" method="get" action="https://echo.htmlacademy.ru" oninput="priceoutput.value=price.value">
               <fieldset>
-                <legend class="title-white">Инфраструктура:</legend>
+                <legend class="title text-white">Инфраструктура:</legend>
                 <ul class="infrastructure">
                   <li class="filter-option"><input type="checkbox" name="swimming-pool" checked>Бассейн</li>
                   <li class="filter-option"><input type="checkbox" name="parking">Парковка</li>
@@ -32,7 +32,7 @@
                 </ul>
               </fieldset>
               <fieldset>
-                <legend class="title-white">Тип жилья:</legend>
+                <legend class="title text-white">Тип жилья:</legend>
                 <ul class="infrastructure">
                   <li class="filter-option"><input type="checkbox" name="hotel" checked>Гостиница</li>
                   <li class="filter-option"><input type="checkbox" name="motel" checked>Мотель</li>
@@ -40,7 +40,7 @@
                 </ul>
               </fieldset>
               <fieldset class="price-per-day">
-                <legend class="title-white">Стоимость в сутки (Р):</legend>
+                <legend class="title text-white">Стоимость в сутки (Р):</legend>
                 <p>От 0 до <output name="priceoutput">3000</output></p>
                 <p><input type="range" min="0" max="4000" step="100" name="price" value="3000"></p>
                 <input type="submit" value="Показать">
