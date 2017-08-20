@@ -26,23 +26,23 @@
               <fieldset>
                 <legend class="title text-white">Инфраструктура:</legend>
                 <ul class="infrastructure">
-                  <li class="filter-option"><input type="checkbox" name="swimming-pool" checked>Бассейн</li>
-                  <li class="filter-option"><input type="checkbox" name="parking">Парковка</li>
-                  <li class="filter-option"><input type="checkbox" name="wi-fi">Wi-Fi</li>
+                  <li class="filter-option"><label><input type="checkbox" name="swimming-pool" checked>Бассейн</label></li>
+                  <li class="filter-option"><label><input type="checkbox" name="parking">Парковка</label></li>
+                  <li class="filter-option"><label><input type="checkbox" name="wi-fi">Wi-Fi</label></li>
                 </ul>
               </fieldset>
               <fieldset>
                 <legend class="title text-white">Тип жилья:</legend>
                 <ul class="infrastructure">
-                  <li class="filter-option"><input type="checkbox" name="hotel" checked>Гостиница</li>
-                  <li class="filter-option"><input type="checkbox" name="motel" checked>Мотель</li>
-                  <li class="filter-option"><input type="checkbox" name="apartments" checked>Апартаменты</li>
+                  <li class="filter-option"><label><input type="checkbox" name="hotel" checked>Гостиница</label></li>
+                  <li class="filter-option"><label><input type="checkbox" name="motel" checked>Мотель</label></li>
+                  <li class="filter-option"><label><input type="checkbox" name="apartments" checked>Апартаменты</label></li>
                 </ul>
               </fieldset>
               <fieldset class="price-per-day">
-                <legend class="title text-white">Стоимость в сутки (Р):</legend>
+                <legend class="title text-white"><label for="price-range">Стоимость в сутки (Р)</label></legend>
                 <p>От 0 до <output name="priceoutput">3000</output></p>
-                <p><input type="range" min="0" max="4000" step="100" name="price" value="3000"></p>
+                <p><input type="range" min="0" max="4000" step="100" name="price" value="3000" id="price-range"></p>
                 <input type="submit" value="Показать">
               </fieldset>
             </form>
@@ -51,12 +51,12 @@
           <h2 class="title">Найдено: 3</h2>
           <p>Сортировка:</p>
           <ul class="search-result-filter">
-            <li class="filter-option current"><a href="#">По цене</li>
-            <li class="filter-option"><a href="#"> По типу</li>
-            <li class="filter-option"><a href="#"> По рейтингу</li>
+            <li class="filter-option current"><a href="#">По цене</a></li>
+            <li class="filter-option"><a href="#">По типу</a></li>
+            <li class="filter-option"><a href="#">По рейтингу</a></li>
           </ul>
-          <a href="#" class="scroll-up"><img src="img/icon-up-dir.svg" width="11" height="10" alt="вверх"></a>
-          <a href="#" class="scroll-down active"><img src="img/icon-down-dir.svg" width="11" height="10" alt="вниз"></a>
+          <button type="button" class="scroll-up"><img src="img/icon-up-dir.svg" width="11" height="10" alt="вверх"></button>
+          <button type="button" class="scroll-down active"><img src="img/icon-down-dir.svg" width="11" height="10" alt="вниз"></button>
         </section>
         <hr>
         <section class="hotel-card">

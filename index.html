@@ -21,6 +21,7 @@
     </header>
     <main class="container">
       <section class="greeting">
+        <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
           <img src="img/welcome.jpg" 
           width="1200" height="720" alt="Главное фото. Седона">
           <h2 class="title">Седона - небольшой городок в Аризоне,<br> 
@@ -91,22 +92,22 @@
         </div>
         <div>       
           <form class="searching-form" method="get" action="https://echo.htmlacademy.ru">
-            <h3 class="title text-white"><a href="#">Поиск гостиницы в Седоне</a></h3>
-            <p>Дата заезда:
-              <input class="date-option" type="date">
+            <a href="#" class="button text-white">Поиск гостиницы в Седоне</a>
+            <p><label>Дата заезда:
+              <input class="date-option" type="date"></label>
               <img src="img/calendar.svg" width="22" height="22">
             </p>
-            <p>Дата выезда:
-              <input class="date-option" type="date">
+            <p><label>Дата выезда:
+              <input class="date-option" type="date"></label>
               <img src="img/calendar.svg" width="22" height="22">
             </p>
-            <p>Взрослые:
-              <input class="number-option" type="number" min="1">
+            <p><label>Взрослые:
+              <input class="number-option" type="number" min="1"></label>
             </p>
-            <p>Дети:
-              <input class="number-option" type="number" min="0">
+            <p><label>Дети:
+              <input class="number-option" type="number" min="0"></label>
             </p>
-            <button type="submit">Найти</button>
+            <button type="get">Найти</button>
           </form>
         </div>
         <div>
