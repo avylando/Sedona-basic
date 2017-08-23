@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Седона</title>
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -29,7 +30,7 @@
           <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>  
       </section>
       <section class="reasons">
-        <div class="reason-block">
+        <div class="reason-block text-white">
           <h3 class="title text-white">Настоящий городок</h3>
           <p>- №1 -</p>
           <p>Седона - не аттракцион для туристов,<br>
@@ -59,7 +60,7 @@
         <div>
           <img src="img/devil's-bridge.jpg" width="800" height="260" alt="Мост Дьявола">
         </div>
-        <div class="reason-block">
+        <div class="reason-block text-white">
           <h3 class="title text-white">Там есть Мост Дьявола</h3>
           <p>- №2 -</p>
           <p>Да, по нему можно пройти! Если конечно<br>
@@ -92,30 +93,32 @@
         </div>
         <div>       
           <form class="searching-form" method="get" action="https://echo.htmlacademy.ru">
-            <a href="#" class="button text-white">Поиск гостиницы в Седоне</a>
-            <p><label>Дата заезда:
-              <input class="date-option" type="date"></label>
-              <img src="img/calendar.svg" width="22" height="22">
-            </p>
-            <p><label>Дата выезда:
-              <input class="date-option" type="date"></label>
-              <img src="img/calendar.svg" width="22" height="22">
-            </p>
-            <p><label>Взрослые:
-              <input class="number-option" type="number" min="1"></label>
-            </p>
-            <p><label>Дети:
-              <input class="number-option" type="number" min="0"></label>
-            </p>
-            <button class="button" type="submit">Найти</button>
+            <a href="#" class="open-form-button text-white">Поиск гостиницы в Седоне</a>
+            <div class="search-terms">
+                <p><label>Дата заезда:
+                  <input class="date-option" type="date"></label>
+                  <img src="img/calendar.svg" width="22" height="22">
+                </p>
+                <p><label>Дата выезда:
+                  <input class="date-option" type="date"></label>
+                  <img src="img/calendar.svg" width="22" height="22">
+                </p>
+                <p><label>Взрослые:
+                  <input class="number-option" type="number" min="1"></label>
+                </p>
+                <p><label>Дети:
+                  <input class="number-option" type="number" min="0"></label>
+                </p>
+            </div>
+            <button class="search-button text-white" type="submit">НАЙТИ</button>
           </form>
         </div>
         <div>
-          <a href="map.html"><img src="http://placehold.it/1200x475" width="1200" height="475" alt="Карта Штата"></a>
+          <img src="img/map.jpg" width="1200" height="593" alt="Карта Штата">
         </div>
       </section>
       </main>
-      <footer>
+      <footer class="page-footer">
         <p class="title"><a href="#">#VISITSEDONA</a></p>
         <ul>
           <li class="social-button"><a href="#"><img src="img/twitter.svg" width="46" height="48" alt="Твиттер"></a></li>

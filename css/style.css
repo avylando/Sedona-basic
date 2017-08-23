@@ -3,12 +3,49 @@ body {
     color: #333333;
     text-transform: uppercase;
 }
+
 .title {
     font-weight: bold;
     font-size: 21px;
-    color: #000000;
-     
+    color: #000000;  
 }
+
 .text-white {    
     color: #ffffff;
 }
+
+/*Первая страница  */
+
+.main-menu,
+.search-terms {
+    color: #000000;
+}
+
+.reason-block {
+    background-color: #81b3d2;
+}
+
+.advantages {
+    background-color: #eeeeee;
+}
+
+.open-form-button {
+    background-color: #766357;
+}
+
+.search-button {
+    background-color: #81b3d2;
+}
+
+.page-footer {
+    background-color: rgba(255, 255 , 255, 0.5);
+}
+
+/*Вторая страница  */
+
+.filters {
+    background-image: url("img/filter-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
