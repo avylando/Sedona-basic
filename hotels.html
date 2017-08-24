@@ -22,18 +22,18 @@
       </nav>
     </header>
     <main>
-        <section class="filters">
+        <section class="filters-menu">
           <h2 class="visually-hidden">Фильтры выбора</h2>
-            <form class="form-filters" method="get" action="https://echo.htmlacademy.ru" oninput="priceoutput.value=price.value">
-              <fieldset>
-                <legend class="title text-white">Инфраструктура:</legend>
+          <form class="form-filters" method="get" action="https://echo.htmlacademy.ru" oninput="priceoutput.value=price.value">
+            <fieldset class="filter">
+              <legend class="title text-white">Инфраструктура:</legend>
                 <ul class="infrastructure">
                   <li class="filter-option"><label><input type="checkbox" name="swimming-pool" checked>Бассейн</label></li>
                   <li class="filter-option"><label><input type="checkbox" name="parking">Парковка</label></li>
                   <li class="filter-option"><label><input type="checkbox" name="wi-fi">Wi-Fi</label></li>
                 </ul>
               </fieldset>
-              <fieldset>
+              <fieldset class="filter">
                 <legend class="title text-white">Тип жилья:</legend>
                 <ul class="infrastructure">
                   <li class="filter-option"><label><input type="checkbox" name="hotel" checked>Гостиница</label></li>
@@ -41,7 +41,7 @@
                   <li class="filter-option"><label><input type="checkbox" name="apartments" checked>Апартаменты</label></li>
                 </ul>
               </fieldset>
-              <fieldset class="price-per-day">
+              <fieldset class="filter price-per-day">
                 <legend class="title text-white"><label for="price-range">Стоимость в сутки (Р)</label></legend>
                 <p>От 0 до <output name="priceoutput">3000</output></p>
                 <p><input type="range" min="0" max="4000" step="100" name="price" value="3000" id="price-range"></p>
