@@ -1,5 +1,5 @@
 body {
-    font: 18px/27px PT Sans, sans-serif;
+    font: 14px/21px PT Sans, sans-serif;
     color: #333333;
     text-transform: uppercase;
 }
@@ -7,11 +7,61 @@ body {
 .title {
     font-weight: bold;
     font-size: 21px;
+    line-height: 26px;
     color: #000000;  
+}
+
+.reason-title {
+    line-height: 21px;
 }
 
 .text-white {    
     color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+.button {
+    color: #ffffff;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+}
+
+.main-header {
+    background-color: #ffffff;
+}
+
+.main-menu {
+    list-style: none;
+}
+
+.menu-item a {
+    color: #000000;
+}
+
+.menu-item-current a {
+    color: #766357;
+}
+
+.main-menu a:hover,
+.main-menu a:focus {
+    color: #81b3d2;
+}
+
+.main-menu a:active {
+    color: #000000;
+    opacity: 0.3;
+}
+
+.page-footer {
+    background-color: rgba(255, 255 , 255, 0.5);
+}
+
+.social-buttons {
+    list-style: none;
 }
 
 .visually-hidden {
@@ -27,11 +77,6 @@ body {
 
 /*Первая страница  */
 
-.main-menu,
-.search-terms {
-    color: #000000;
-}
-
 .reason-block {
     background-color: #81b3d2;
 }
@@ -40,17 +85,60 @@ body {
     background-color: #eeeeee;
 }
 
-.open-form-button {
+.title-interesting {
+    color: #000000;
+    font-size: 30px;
+    line-height: 36px;
+}
+
+.open-form{
     background-color: #766357;
+}
+
+.open-form:hover,
+.open-form:focus {
+    background-color: #604e43;
+}
+
+.open-form:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #503e33;
+}
+
+.search-terms {
+    color: #000000;
 }
 
 .search-button {
     background-color: #81b3d2;
 }
 
-.page-footer {
-    background-color: rgba(255, 255 , 255, 0.5);
+.search-button:hover,
+.search-button:focus {
+    background-color: #669ec0;
 }
+
+.search-button:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #5496bd;
+}
+
+.date-option,
+.number-option {
+    background-color: #f2f2f2;
+}
+
+.date-option:hover,
+.number-option:hover {
+    background-color: #ebebeb;
+}
+
+.date-option:focus,
+.number-option:focus {
+    background-color: #ffffff;
+    border: 2px solid #e5e5e5;
+}
+
 
 /*Вторая страница  */
 
@@ -60,6 +148,100 @@ body {
     background-repeat: no-repeat;
 }
  
-.form-filters {
-    background-image: inherit;
+.form-filters .filter {
+    border: none;
+}
+
+.infrastructure,
+.house-type {
+    list-style: none;
+    line-height: 26px;
+}
+
+.filter-input:disabled, {
+    color: #6a6a6a;
+}
+
+.show-button {
+    background-color: transparent;
+}
+
+.show-button:hover,
+.show-button:focus {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.search-result-filter {
+    list-style: none;
+}
+
+.search-result-filter .filter-option {
+    color: rgba(129, 179, 210, 0.3);
+    border-bottom: 1px dotted #81b3d2;
+}
+
+.search-result-filter .filter-option-current {
+    color: #81b3d2;
+    border: none;
+}
+
+.search-result-filter .filter-option:hover,
+.search-result-filter .filter-option:focus {
+    color: #81b3d2;
+    border-bottom: 1px dotted #81b3d2;
+}
+
+.search-result-filter .filter-option:active {
+    color: #000000;
+    border: none;
+}
+
+.hotel-name {
+    color: #000000;
+}
+
+.hotel-name:hover,
+.hotel-name:focus {
+    color: #81b3d2;
+}
+
+.hotel-name:active {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.stars {
+    list-style: none;
+}
+
+.details-button {
+    background-color: #81b3d2;
+}
+
+.details-button:hover,
+.details-button:focus {
+    background-color: #669ec0;
+}
+
+.details-button:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #5496bd;
+}
+
+.booking-button {
+    background-color: #766357;
+}
+
+.booking-button:hover,
+.booking-button:focus {
+    background-color: #604e43;
+}
+
+.booking-button:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #503e33;
+}
+
+.hotel-rate {
+    background-color: #f2f2f2;
 }
