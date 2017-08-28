@@ -239,6 +239,10 @@ a {
 
 .details-button {
     background-color: #81b3d2;
+    padding-left: 15px; 
+    padding-right: 15px;
+    padding-top: 7px;
+    padding-bottom: 7px;
 }
 
 .details-button:hover,
@@ -253,6 +257,10 @@ a {
 
 .booking-button {
     background-color: #766357;
+    padding-left: 15px; 
+    padding-right: 15px;
+    padding-top: 7px;
+    padding-bottom: 7px;
 }
 
 .booking-button:hover,
@@ -267,6 +275,10 @@ a {
 
 .hotel-rate {
     background-color: #f2f2f2;
+    padding-left: 14px; 
+    padding-right: 14px;
+    padding-top: 7px;
+    padding-bottom: 7px;
 }
 
 /* Стили сеток */
@@ -486,5 +498,27 @@ a {
 
 .hotel-card {
     display: flex;
+    align-items: center;
     width: 1200px;
+}
+
+.hotel-description {
+    margin-left: 30px;
+}
+
+.hotel-class {
+    margin-left: auto;
+    padding-right: 20px;
+}
+
+.stars {
+    margin: 0;
+}
+
+.star {
+    display: inline;
+}
+
+.hotel-rate {
+    margin-left: auto;
 }
