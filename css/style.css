@@ -100,6 +100,11 @@ a {
 
 .open-form{
     background-color: #766357;
+    margin-top: 35px;
+    padding-top: 35px; 
+    padding-bottom: 35px; 
+    padding-left: 140px; 
+    padding-right: 140px; 
 }
 
 .open-form:hover,
@@ -252,4 +257,101 @@ a {
 
 .hotel-rate {
     background-color: #f2f2f2;
+}
+
+/* Сетки */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.hello-words {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 34px;
+}
+
+.flex-wrapper-1 {
+    display: flex;
+    width: 1200px;
+    max-height: 255px;
+    margin-top: 31px;
+}
+
+.reason-block {
+    width: 400px;
+    text-align: center;
+    padding-top: 26px; 
+}
+
+.flex-wrapper-2 {
+    display: flex;
+    align-items: center;
+    width: 1200px;
+    min-height: 299px;
+}
+
+.recomendations {
+    width: 400px;
+    text-align: center;
+}
+
+.flex-wrapper-3 {
+    display: flex;
+    width: 1200px;
+    max-height: 255px;
+}
+
+.flex-wrapper-4 {
+    display: flex;
+    align-items: center;
+    width: 1200px;
+    min-height: 255px;
+    background-color: #eeeeee;
+}
+
+.advantages {
+    width: 400px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.flex-wrapper-5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1200px;
+    min-height: 290px;
+    margin-top: 30px;
+}
+
+.invitation {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.page-footer {
+    display: flex;
+    align-items: center;
+    width: 1200px;
+    min-height: 120px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.footer-block {
+    width: 400px;
+    text-align: center;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
 }
