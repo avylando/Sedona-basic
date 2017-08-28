@@ -7,28 +7,32 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="inner-page">
     <header class="main-header">
       <nav class="main-navigation">
+        <ul class="main-menu main-menu-left">
+          <li class="menu-item item-info"><a href="info.html">Информация</a></li>
+          <li class="menu-item item-content"><a href="content.html">Фото и видео</a></li>
+        </ul>
+        <ul class="main-menu main-menu-right">
+          <li class="menu-item item-map"><a href="map.html">Карта штата</a></li>
+          <li class="menu-item item-hotels"><a href="hotels.html">Гостиницы</a></li>
+        </ul>
         <a href="index.html" class="main-header-logo">
           <img src="img/logo.png" width="140" height="70" alt="Логотип Седона">
         </a>
-        <ul class="main-menu">
-          <li class="menu-item"><a href="info.html">Информация</a></li>
-          <li class="menu-item"><a href="content.html">Фото и видео</a></li>
-          <li class="menu-item"><a href="map.html">Карта штата</a></li>
-          <li class="menu-item"><a href="hotels.html">Гостиницы</a></li>
-        </ul>
       </nav>
     </header>
     <main class="container">
       <section class="greeting">
         <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
-          <img src="img/welcome.jpg" 
+          <img class="main-poster" src="img/welcome.jpg" 
           width="1200" height="570" alt="Главное фото. Седона">
-          <h2 class="title">Седона - небольшой городок в Аризоне,<br> 
-          заслуживающий большего!</h2>
-          <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>  
+          <div class="hello-words">
+            <h2 class="title">Седона - небольшой городок в Аризоне,<br> 
+            заслуживающий большего!</h2>
+            <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+          </div>  
       </section>
       <section class="reasons">
         <div class="reason-block text-white">
@@ -97,12 +101,12 @@
             <a href="#" class="button open-form">Поиск гостиницы в Седоне</a>
             <div class="search-terms">
                 <p><label>Дата заезда:
-                  <input class="date-option" type="date"></label>
-                  <img src="img/calendar.svg" width="22" height="22">
+                  <input class="date-option" type="text"></label>
+                  <img src="img/calendar.svg" width="22" height="22" alt="Календарь">
                 </p>
                 <p><label>Дата выезда:
-                  <input class="date-option" type="date"></label>
-                  <img src="img/calendar.svg" width="22" height="22">
+                  <input class="date-option" type="text"></label>
+                  <img src="img/calendar.svg" width="22" height="22" alt="Календарь">
                 </p>
                 <p><label>Взрослые:
                   <input class="number-option" type="number" min="1"></label>

@@ -82,7 +82,7 @@ a {
     list-style: none;
 }
 
-/*Первая страница  */
+/* Первая страница  */
 
 .reason-block {
     background-color: #81b3d2;
@@ -147,7 +147,7 @@ a {
 }
 
 
-/*Вторая страница  */
+/* Вторая страница  */
 
 .filters-menu {
     background-image: url("../img/filter-background.jpg"); 
@@ -252,4 +252,55 @@ a {
 
 .hotel-rate {
     background-color: #f2f2f2;
+}
+
+/* Стили сеток  */
+
+ .main-navigation { 
+    display: flex;
+    align-items: center;
+    min-height: 60px;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.main-header-logo {
+    width: 140px;
+    height: 70px;
+    position: absolute;   
+    left: 600px;
+    top: 0;
+}
+
+.main-menu-left {
+    display: flex;
+    align-items: center;
+    width: 600px;
+}
+
+.item-info {
+    margin-left: 32px;
+}
+
+.item-content{
+    margin-left: 147px;
+}
+
+.main-menu-right {
+    display: flex;
+    align-items: center;
+    width: 600px;
+}
+
+.item-map {
+    margin-left: 160px;
+}
+
+.item-hotels {
+    margin-left: 160px;
+}
+
+.menu-item {
+    line-height: 20px;
 }
