@@ -134,6 +134,8 @@ img {
 
 .search-terms {
     color: #000000;
+    padding-left: 55px;
+    padding-right: 55px;
 }
 
 .search-button {
@@ -470,8 +472,6 @@ img {
     display: flex;
     flex-direction: column;
     width: 570px;
-    margin-left: 50px;
-    margin-right: 50px;
 }
 
 .modal-wrapper-1 {
@@ -491,7 +491,7 @@ img {
 }
 
 .number-option {
-    width: 115px;
+    width: 110px;
 }
 
 .adults-number {
@@ -504,6 +504,9 @@ img {
 
 .kids {
     margin-left: 50px;
+}
+.search-button {
+    align-self: center;
 }
 
 /* Внутренняя. Сетки */
