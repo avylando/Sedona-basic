@@ -95,6 +95,12 @@ img {
 
 .social-buttons {
     list-style: none;
+    margin: 0 auto;
+}
+
+.social-button {
+    display: inline-block;
+    
 }
 
 /* Первая страница  */
@@ -435,20 +441,14 @@ img {
 
 .footer-block {
     width: 400px;
-    text-align: center;
     padding-top: 35px;
+    text-align: center;
     vertical-align: middle;
 }
 
 .hash-tag {
-    margin-top:14px;
-}
-
-.social-buttons {
-    display: flex;
-    margin: 0;
-    justify-content: center;
-    align-items: center;
+    margin: 0 auto;
+    padding-top: 47px;
 }
 
 .fb {
