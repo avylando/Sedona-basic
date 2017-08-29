@@ -27,7 +27,7 @@
       <section class="greeting">
         <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
           <img class="main-poster" src="img/welcome.jpg" 
-          width="1200" height="570" alt="Главное фото. Седона">
+          width="1200" height="511" alt="Главное фото. Седона">
           <div class="hello-words">
             <h2 class="title">Седона — небольшой городок в Аризоне,<br> 
             заслуживающий большего!</h2>
@@ -38,8 +38,8 @@
         <div class="flex-wrapper-1">
           <div class="reason-block text-white">
             <h3 class="title reason-title text-white">Настоящий<br>городок</h3>
-            <p>- №1 -</p>
-            <p>Седона - не аттракцион для туристов,<br>
+            <p>— №1 —</p>
+            <p>Седона — не аттракцион для туристов,<br>
             там течет своя жизнь</p>
           </div>
           <div>
@@ -48,19 +48,19 @@
         </div>
         <div class="flex-wrapper-2">
           <div class="recomendations">
-            <img src="img/icon-1.svg" width="50" height="50" alt="home-icon">
+            <img src="img/icon-1.svg" width="76" height="76" alt="home-icon">
             <h3 class="title reason-title">Жилье</h3>
             <p>Рекомендуем пожить в настоящем<br>
             мотеле, все как в кино!</p>
           </div>
           <div class="recomendations">
-            <img src="img/icon-3.svg" width="50" height="50" alt="food-icon">
+            <img src="img/icon-3.svg" width="80" height="74" alt="food-icon">
             <h3 class="title reason-title">Еда</h3>
             <p>Всегда заказывайте фирменный бургер,<br>
             вы не разочаруетесь!</p>
           </div>
           <div class="recomendations">
-            <img src="img/icon-2.svg" width="50" height="50" alt="souvenir-icon">
+            <img src="img/icon-2.svg" width="72" height="79" alt="souvenir-icon">
             <h3 class="title reason-title">Сувениры</h3>
             <p>Не только китайского, но и местного<br>
             производства!</p>
@@ -72,7 +72,7 @@
           </div>
           <div class="reason-block text-white">
             <h3 class="title reason-title text-white">Там есть<br>Мост Дьявола</h3>
-            <p>- №2 -</p>
+            <p>— №2 —</p>
             <p>Да, по нему можно пройти! Если конечно<br>
             вы осмелитесь</p>
           </div>
@@ -80,13 +80,13 @@
         <div class="flex-wrapper-4">
           <div class="advantages">
             <h3 class="title reason-title">Небольшая<br>площадь</h3>
-            <p>- №3 -</p>
+            <p>— №3 —</p>
             <p>Все достопримечательности<br>
             находятся очень близко</p>
           </div>
           <div class="advantages">
             <h3 class="title reason-title">Красивая<br>дорога</h3>
-            <p>- №4 -</p>
+            <p>— №4 —</p>
             <p>Ехать в Седону из Лас-Вегаса совсем<br>
             не скучно!</p>
           </div>
@@ -111,36 +111,40 @@
       </section>
       </main>
       <footer class="page-footer">
-        <p class="footer-block"><a class="title" href="#">#VISITSEDONA</a></p>
+        <div class="footer-block hash-tag"><a class="title" href="#">#VISITSEDONA</a></div>
         <ul class="footer-block social-buttons">
           <li class="social-button twitter"><a href="#"><img src="img/twitter.svg" width="46" height="48" alt="Твиттер"></a></li>
           <li class="social-button fb"><a href="#"><img src="img/fb-icon.svg" width="46" height="48" alt="Facebook"></a></li>
           <li class="social-button youtube"><a href="#"><img src="img/youtube.svg" width="46" height="48" alt="YouTube"></a></li>
         </ul>
-        <p class="footer-block footer-copyright">
+        <div class="footer-block footer-copyright">
           <span class="website-by">Website by</span><a href="https://htmlacademy.ru/" class="academy-logo"><img src="img/logo-htmlacademy.svg" width="135" height="45" alt="HTML Academy"></a>
-        </p>
+        </div>
       </footer>
 
       <section class="modal modal-search">
           <form class="searching-form" method="get" action="https://echo.htmlacademy.ru">
-            <div class="search-terms">
-                <p><label>Дата заезда:
-                  <input class="date-option" type="text"></label>
+            <div class="modal-wrapper">
+              <div class="search-terms">
+                <p class="dates"><label>Дата заезда:
+                  <input class="date-option arrival-date" type="text"></label>
                   <img src="img/calendar.svg" width="22" height="22" alt="Календарь">
                 </p>
-                <p><label>Дата выезда:
-                  <input class="date-option" type="text"></label>
+                <p class="dates"><label>Дата выезда:
+                  <input class="date-option departure-date" type="text"></label>
                   <img src="img/calendar.svg" width="22" height="22" alt="Календарь">
                 </p>
-                <p><label>Взрослые:
-                  <input class="number-option" type="number" min="1"></label>
+                <div class="modal-wrapper-1">
+                <p class="adults"><label>Взрослые:
+                  <input class="number-option adults-number" type="number" min="1"></label>
                 </p>
-                <p><label>Дети:
-                  <input class="number-option" type="number" min="0"></label>
+                <p class="kids"><label>Дети:
+                  <input class="number-option kids-number" type="number" min="0"></label>
                 </p>
-            </div>
-            <button class="button search-button" type="submit">Найти</button>
+                </div>
+              </div>
+            <button class="button search-button title" type="submit">Найти</button>
+          </div>
           </form>
       </section>
 
