@@ -100,7 +100,11 @@ img {
 
 .social-button {
     display: inline-block;
-    
+}
+
+.social-button:hover,
+.social-button:focus {
+    background-color:
 }
 
 /* Первая страница  */
@@ -184,15 +188,16 @@ img {
     background-position: center center;
     background-repeat: no-repeat;
     background-color: #604e43;
+    background-size: cover;
 }
  
 .form-filters .filter {
     border: none;
 }
 
-.infrastructure,
-.house-type {
+.checkbox-filter {
     list-style: none;
+    margin: 0;
     line-height: 26px;
 }
 
@@ -219,7 +224,7 @@ img {
     list-style: none;
 }
 
-.search-result-filter .filter-option {
+.search-result-filter .result-filter-option {
     color: rgba(129, 179, 210, 0.3);
     border-bottom: 1px dotted #81b3d2;
 }
@@ -229,13 +234,13 @@ img {
     border: none;
 }
 
-.search-result-filter .filter-option:hover,
-.search-result-filter .filter-option:focus {
+.search-result-filter .result-filter-option:hover,
+.search-result-filter .result-filter-option:focus {
     color: #81b3d2;
     border-bottom: 1px dotted #81b3d2;
 }
 
-.search-result-filter .filter-option:active {
+.search-result-filter .result-filter-option:active {
     color: #000000;
     border: none;
 }
@@ -258,6 +263,7 @@ img {
 }
 
 .details-button {
+    font-weight: bold;
     background-color: #81b3d2;
     padding-left: 15px; 
     padding-right: 15px;
@@ -276,6 +282,7 @@ img {
 }
 
 .booking-button {
+    font-weight: bold;
     background-color: #766357;
     padding-left: 15px; 
     padding-right: 15px;
@@ -325,7 +332,8 @@ img {
     margin: 0 auto;
 }
 
-.main-menu-left {
+.main-menu-left,
+.main-menu-right {
     display: flex;
     width: 600px;
     margin: 0;
@@ -339,28 +347,17 @@ img {
     margin-left: 147px;
 }
 
-.main-menu-right {
-    display: flex;
-    width: 600px;
-    margin: 0;
-}
-
-.item-map {
-    margin-left: 160px;
-}
-
+.item-map,
 .item-hotels {
     margin-left: 160px;
-}
-
-.menu-item {
-    line-height: 20px;
 }
 
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 1200px;
+    margin: 0 auto;
 }
 
 .hello-words {
@@ -460,6 +457,7 @@ img {
 .website-by {
     display: inline-block;
     height: 60px;
+    box-sizing: border-box;
     vertical-align: middle;
 
 }
@@ -467,6 +465,7 @@ img {
 .academy-logo {
     display: inline-block;
     margin-left: 10px;
+    box-sizing: border-box;
 }
 
 /*  Модальное окно */
@@ -516,14 +515,19 @@ img {
 
 .flex-wrapper-filters {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     width: 1200px;
-    padding-left: 20px;
-    padding-right: 20px;
+    min-height: 218px;
+}
+
+.filter {
+    padding: 0;
+    margin: 0;
 }
 
 .filter-option {
     margin-left: -40px;
+    
 }
 
 .filter-wrapper {
@@ -531,44 +535,70 @@ img {
 }
 
 .edge-block {
-    padding-left:20px; 
+    margin-left: 73px; 
 }
 
 .range-filter-wrapper {
-    width: 330px;
+    width: 328px;
     margin-left: auto;
     padding-top: 27px;
-    padding-right: 20px;
-    text-align: center;
+    padding-right: 73px;
+    /* text-align: center; */
 }
 
 .sorting-wrapper {
     display: flex;
-    align-items: center;
     width: 1200px;
-    margin-top:27px;
-    margin-bottom:17px;
-    /* background-color: yellow; */
-    /* opacity: 0.3; */
+    min-height: 87px;
+    /* padding-top: 25px; */
+     background-color: yellow; 
+     opacity: 0.3; 
+}
+
+ .found-3 { 
+    padding-top: 12px;
 }
 
 .sorting-label {
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 0;
     margin-left: 48px;
+    padding-top: 35px;
 }
 
 .search-result-filter {
+    font-size: 12px;
+    line-height: 18px;
     display: flex;
-    margin: 0;
+    margin-top: 0;
+    padding-top: 35px;
 }
 
 .result-filter-option {
     display: inline;
-    padding-right: 30px; 
+    margin-right: 30px; 
 }
 
 .buttons-block {
+    position: relative;
+    padding: 0;
+    width: 40px;
+    height: 87px;
     margin-left: auto;
-    padding-right: 20px;
+    margin-right: 73px;
+}
+
+.scroll-up {
+    position: absolute;
+    right: 23px;
+    top: 36px;
+}
+
+.scroll-down {
+    position: absolute;
+    right: 0;
+    top: 34px;
 }
 
 .hotel-card {
@@ -576,8 +606,8 @@ img {
     align-items: center;
     width: 1200px;
     min-height: 150px;
-    /* background-color: green; */
-    /* opacity: 0.3; */
+     background-color: green; 
+     opacity: 0.3; 
 }
 
 .hotel-description {
@@ -594,12 +624,20 @@ img {
 }
 
 .hotel-class {
+    position: relative;
+    width: 112px;
+    height: 154px;
     margin-left: auto;
-    padding-right: 20px;
+    margin-right: 73px;
 }
 
 .stars {
+    position: absolute;
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    right: 0px;
+    top: 28px;
 }
 
 .star {
@@ -608,9 +646,10 @@ img {
 }
 
 .hotel-rate {
-    display: inline-block;
-    box-sizing: border-box;
-    margin-left: auto;
-    margin-right: 0;
+    position: absolute;
+    width: 112px; 
+    box-sizing: border-box; 
+    right: 0px;
+    top: 87px;
 }
 

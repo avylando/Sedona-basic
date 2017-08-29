@@ -30,9 +30,9 @@
             <form class="form-filters text-white" method="get" action="https://echo.htmlacademy.ru" oninput="priceoutput.value=price.value">
               <div class="flex-wrapper-filters">
               <div class="filter-wrapper edge-block">
-              <fieldset class="filter">
+              <fieldset class="filter infrastructure">
                 <legend class="form-title">Инфраструктура:</legend>
-                  <ul class="infrastructure chekbox-filter">
+                  <ul class="checkbox-filter">
                     <li class="filter-option"><label><input class="filter-input" type="checkbox" name="swimming-pool" checked>Бассейн</label></li>
                     <li class="filter-option"><label><input class="filter-input" type="checkbox" name="parking">Парковка</label></li>
                     <li class="filter-option"><label><input class="filter-input" type="checkbox" name="wi-fi">Wi-Fi</label></li>
@@ -40,9 +40,9 @@
               </fieldset>
               </div>
               <div class="filter-wrapper">
-              <fieldset class="filter">
+              <fieldset class="filter house-type">
                   <legend class="form-title">Тип жилья:</legend>
-                  <ul class="house-type checkbox-filter">
+                  <ul class="checkbox-filter">
                     <li class="filter-option"><label><input class="filter-input" type="checkbox" name="hotel" checked>Гостиница</label></li>
                     <li class="filter-option"><label><input class="filter-input" type="checkbox" name="motel" checked>Мотель</label></li>
                     <li class="filter-option"><label><input class="filter-input" type="checkbox" name="apartments" checked>Апартаменты</label></li>
@@ -62,7 +62,7 @@
         </section>
         <section class="search-result">
           <div class="sorting-wrapper">
-            <h2 class="title edge-block">Найдено: 3</h2>
+            <h2 class="title edge-block found-3">Найдено: 3</h2>
             <p class="sorting-label">Сортировка:</p>
             <ul class="search-result-filter">
               <li><a class="result-filter-option filter-option-current" href="#">По цене</a></li>
@@ -70,8 +70,8 @@
               <li><a class="result-filter-option" href="#">По рейтингу</a></li>
             </ul>
             <div class="buttons-block">
-              <button type="button" class="scroll-up"><img src="img/icon-up-dir.svg" width="11" height="10" alt="вверх"></button>
-              <button type="button" class="scroll-down active"><img src="img/icon-down-dir.svg" width="11" height="10" alt="вниз"></button>
+              <a href="#" class="scroll-up"><img src="img/icon-up-dir.svg" width="11" height="10" alt="вверх"></a>
+              <a href="#" class="scroll-down active"><img src="img/icon-down-dir.svg" width="11" height="10" alt="вниз"></a>
             </div>
           </div>
         </section>
@@ -95,7 +95,6 @@
             <div class="hotel-rate">Рейтинг: 8.5</div>
           </div>
         </section>
-        <hr>
         <section class="hotel-card">
           <div class="hotel-image edge-block">
             <img src="img/desert-quail.jpg" width="135" height="90" alt="Фото отеля">
@@ -110,11 +109,11 @@
             <ul class="stars">
               <li class="star"><img src="img/star.svg" width="20" height="20" alt="*"></li>
               <li class="star"><img src="img/star.svg" width="20" height="20" alt="*"></li>
+              <li class="star"><img src="img/star.svg" width="20" height="20" alt="*"></li>
             </ul>
             <div class="hotel-rate">Рейтинг: 8.9</div>
           </div>
         </section>
-        <hr>
         <section class="hotel-card">
           <div class="hotel-image edge-block">
             <img src="img/poco-diablo.jpg" width="135" height="90" alt="Фото отеля">
@@ -129,9 +128,8 @@
             <ul class="stars">
               <li class="star"><img src="img/star.svg" width="20" height="20" alt="*"></li>
               <li class="star"><img src="img/star.svg" width="20" height="20" alt="*"></li>
-              <li class="star"><img src="img/star.svg" width="20" height="20" alt="*"></li>
             </ul>
-            <p class="hotel-rate">Рейтинг: 9.2</p>
+            <div class="hotel-rate">Рейтинг: 9.2</div>
           </div>
         </section>
     </main>
