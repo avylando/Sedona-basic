@@ -102,9 +102,9 @@ img {
     display: inline-block;
 }
 
-.social-button:hover,
-.social-button:focus {
-    background-color:
+.svg-social:hover,
+.svg-social:focus {
+    background-color: #669ec0;
 }
 
 /* Первая страница  */
