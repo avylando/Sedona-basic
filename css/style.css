@@ -15,6 +15,7 @@ body {
 
 .menu-item {
     font-weight: bold;
+
 }
 
 .form-title {
@@ -67,6 +68,9 @@ img {
 }
 
 .main-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     list-style: none;
 }
 
@@ -371,8 +375,6 @@ img {
     align-items: center;
     width: 1200px;
     margin: 0 auto;
-    padding-bottom: 18px;
-    padding-top: 16px;
 }
 
 .main-header-logo {
@@ -401,7 +403,10 @@ img {
     margin-left: 147px;
 }
 
-.item-map,
+.item-map {
+    margin-left: 360px;
+
+}
 .item-hotels {
     margin-left: 160px;
 }
@@ -509,16 +514,16 @@ img {
 }
 
 .footer-copyright {
-    position: relative;
     margin: 0;
     padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .website-by {
-    position: absolute;
-    display: inline-block;
-    left: 91px;
-    top: 35px;
+    margin-bottom: 10px;
+    margin-right: 10px;
 }
 
 .academy-svg {
@@ -533,13 +538,6 @@ img {
 
 .academy-svg-path:active {
     fill: #bdbbbc;
-}
-
-.academy-logo {
-    position: absolute;
-    display: inline-block;
-    left: 173px;
-    top: 25px;
 }
 
 /*  Модальное окно */
