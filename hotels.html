@@ -7,14 +7,12 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
   </head>
-  <body class="inner page">
+  <body>
       <header class="main-header">
           <nav class="main-navigation">
-            <ul class="main-menu main-menu-left">
+            <ul class="main-menu">
               <li class="menu-item item-info"><a href="info.html">Информация</a></li>
               <li class="menu-item item-content"><a href="content.html">Фото и видео</a></li>
-            </ul>
-            <ul class="main-menu main-menu-right">
               <li class="menu-item item-map"><a href="map.html">Карта штата</a></li>
               <li class="menu-item menu-item-current item-hotels"><a href="hotels.html">Гостиницы</a></li>
             </ul>
@@ -27,29 +25,23 @@
     <main class="container">
         <section class="filters-menu">
           <h2 class="visually-hidden">Фильтры выбора</h2>
-            <form class="form-filters text-white" method="get" action="https://echo.htmlacademy.ru" oninput="priceoutput.value=price.value">
-              <div class="flex-wrapper-filters">
-              <div class="filter-wrapper edge-block">
+            <form class="form-filters text-white flex-wrapper-filters" method="get" action="https://echo.htmlacademy.ru" oninput="priceoutput.value=price.value">
               <fieldset class="filter infrastructure">
                 <legend class="form-title">Инфраструктура:</legend>
                   <ul class="checkbox-filter">
-                    <li class="filter-option"><label><input class="filter-input" type="checkbox" name="swimming-pool" checked>Бассейн</label></li>
-                    <li class="filter-option"><label><input class="filter-input" type="checkbox" name="parking">Парковка</label></li>
-                    <li class="filter-option"><label><input class="filter-input" type="checkbox" name="wi-fi">Wi-Fi</label></li>
+                    <li class="filter-option filter-option-checked"><label><input class="filter-input" type="checkbox" name="swimming-pool" checked hidden>Бассейн</label></li>
+                    <li class="filter-option"><label><input class="filter-input" type="checkbox" name="parking" hidden>Парковка</label></li>
+                    <li class="filter-option"><label><input class="filter-input" type="checkbox" name="wi-fi" hidden>Wi-Fi</label></li>
                   </ul>
               </fieldset>
-              </div>
-              <div class="filter-wrapper">
               <fieldset class="filter house-type">
                   <legend class="form-title">Тип жилья:</legend>
                   <ul class="checkbox-filter">
-                    <li class="filter-option"><label><input class="filter-input" type="checkbox" name="hotel" checked>Гостиница</label></li>
-                    <li class="filter-option"><label><input class="filter-input" type="checkbox" name="motel" checked>Мотель</label></li>
-                    <li class="filter-option"><label><input class="filter-input" type="checkbox" name="apartments" checked>Апартаменты</label></li>
+                    <li class="filter-option filter-option-checked"><label><input class="filter-input" type="checkbox" name="hotel" checked hidden>Гостиница</label></li>
+                    <li class="filter-option filter-option-checked"><label><input class="filter-input" type="checkbox" name="motel" checked hidden>Мотель</label></li>
+                    <li class="filter-option filter-option-checked"><label><input class="filter-input" type="checkbox" name="apartments" checked hidden>Апартаменты</label></li>
                   </ul>
               </fieldset>
-              </div>
-              <div class="range-filter-wrapper">
               <fieldset class="filter price-per-day">
                 <legend class="form-title"><label for="price-range">Стоимость в сутки (Р):</label></legend>
                 <div class="price-controls">
@@ -65,13 +57,11 @@
                 </div>
                 <button class="button show-button" type="submit">Показать</button>
               </fieldset>
-              </div>
-              </div>
             </form>
         </section>
         <section class="search-result">
           <div class="sorting-wrapper">
-            <h2 class="title edge-block found-3">Найдено: 3</h2>
+            <h2 class="title found-3">Найдено: 3</h2>
             <p class="sorting-label">Сортировка:</p>
             <ul class="search-result-filter">
               <li><a class="result-filter-option filter-option-current" href="#">По цене</a></li>
@@ -85,14 +75,16 @@
           </div>
         </section>
         <section class="hotel-card">
-          <div class="hotel-image edge-block">
+          <div class="hotel-image">
             <img src="img/amara-resort.jpg" width="135" height="90" alt="Фото отеля">
           </div>
           <div class="hotel-description">
             <h2 class="title hotel-title"><a class="hotel-name" href="#">Amara Resort & Spa</a></h2>
-            <p><span class="hotel-type">Гостиница</span><span class="hotel-price"> от 4000 р</span></p>
-            <a class="button details-button" href="hotel-page.html">Подробнее</a>
-            <a class="button booking-button" href="#">Забронировать</a>
+            <p class="type-price"><span class="hotel-type">Гостиница</span><span class="hotel-price"> от 4000 р</span></p>
+            <div class="card-buttons">
+              <a class="button details-button" href="hotel-page.html">Подробнее</a>
+              <a class="button booking-button" href="#">Забронировать</a>
+            </div>
           </div>
           <div class="hotel-class">
             <ul class="stars">
@@ -105,14 +97,16 @@
           </div>
         </section>
         <section class="hotel-card">
-          <div class="hotel-image edge-block">
+          <div class="hotel-image">
             <img src="img/desert-quail.jpg" width="135" height="90" alt="Фото отеля">
           </div>
           <div class="hotel-description">
             <h2 class="title hotel-title"><a class="hotel-name" href="#">Desert Quail Inn</a></h2>
-            <p><span class="hotel-type">Мотель</span><span class="hotel-price"> от 3000 р</span></p>
-            <a class="button details-button" href="hotel-page.html">Подробнее</a>
-            <a class="button booking-button" href="#">Забронировать</a>
+            <p class="type-price"><span class="hotel-type">Мотель</span><span class="hotel-price"> от 3000 р</span></p>
+            <div class="card-buttons">
+              <a class="button details-button" href="hotel-page.html">Подробнее</a>
+              <a class="button booking-button" href="#">Забронировать</a>
+            </div>
           </div>
           <div class="hotel-class">
             <ul class="stars">
@@ -124,14 +118,16 @@
           </div>
         </section>
         <section class="hotel-card">
-          <div class="hotel-image edge-block">
+          <div class="hotel-image">
             <img src="img/poco-diablo.jpg" width="135" height="90" alt="Фото отеля">
           </div>
           <div class="hotel-description">
             <h2 class="title hotel-title"><a class="hotel-name" href="#">Villas At Poco Diablo</a></h2>
-            <p><span class="hotel-type">Апартаменты</span><span class="hotel-price"> от 2000 р</span></p>
-            <a class="button details-button" href="hotel-page.html">Подробнее</a>
-            <a class="button booking-button" href="#">Забронировать</a>
+            <p class="type-price"><span class="hotel-type">Апартаменты</span><span class="hotel-price"> от 2000 р</span></p>
+            <div class="card-buttons">
+              <a class="button details-button" href="hotel-page.html">Подробнее</a>
+              <a class="button booking-button" href="#">Забронировать</a>
+            </div>
           </div>
           <div class="hotel-class">
             <ul class="stars">
@@ -150,7 +146,7 @@
             <svg class="svg-icon-twitter" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15" viewBox="0 0 17 15">
               <path class="svg-icon" fill="#FFF" d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z"/>
             </svg>
-            <span class="visually-hidden">Твиттер</span>
+            <span class="visually-hidden">Twitter</span>
           </a>
         </li>
         <li class="social-button fb">
@@ -158,7 +154,7 @@
             <svg class="svg-icon-fb" xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22">
               <path class="svg-icon" fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"/>
             </svg>
-            <span class="visually-hidden">Фэйсбук</span>
+            <span class="visually-hidden">Facebook</span>
           </a>
         </li>
         <li class="social-button youtube">
@@ -166,6 +162,7 @@
             <svg class="svg-icon-youtube" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16" viewBox="0 0 20 16">
               <path class="svg-icon" fill="#FFF" d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z"/>
             </svg>
+            <span class="visually-hidden">Youtube</span>
           </a>
         </li>
       </ul>
