@@ -191,6 +191,9 @@ img {
     color: #000000;
     font-size: 30px;
     line-height: 36px;
+    margin: 0;
+    margin-bottom: 27px;
+    
 }
 
 .open-form{
@@ -212,27 +215,7 @@ img {
     background-color: #503e33;
 }
 
-.search-terms {
-    color: #000000;
-    padding-left: 55px;
-    padding-right: 55px;
-}
 
-.search-button {
-    background-color: #81b3d2;
-    padding: 15px 195px;
-    margin-top: 40px;
-}
-
-.search-button:hover,
-.search-button:focus {
-    background-color: #669ec0;
-}
-
-.search-button:active {
-    color: rgba(255, 255, 255, 0.3);
-    background-color: #5496bd;
-}
 
 .date-option,
 .number-option {
@@ -530,8 +513,7 @@ img {
     flex-direction: column;
     align-items: center;
     width: 1200px;
-    min-height: 290px;
-    margin-top: 30px;
+    margin-top: 51px;
 }
 
 .invitation {
@@ -542,6 +524,12 @@ img {
 
 
 /*  Модальное окно */
+
+.searching-form {
+    /* position: fixed; */
+    top: 2170px;
+    left: 60px;
+}
 
 .modal-wrapper {
     display: flex;
@@ -554,9 +542,47 @@ img {
     display: flex;
 }
 
+.search-terms {
+    padding-left: 55px;
+    padding-right: 55px;
+}
+
+.arrival {
+    margin-top: 54px;
+}
+
 .date-option {
     width: 310px;
+    height: 38px;
+    border: none;
+    outline: none;
 }
+
+.dates {
+    position: relative;
+}
+
+.dates::after {
+    content: "";
+    position: absolute;
+
+    display: block;
+    width: 38px;
+    height: 40px;
+
+    right: 56px;
+    bottom: 0;
+
+    background-color: #f2f2f2;
+    background-image: url("../img/calendar.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.dates::after :hover,
+.dates::after :focus {
+    background-color: #ebebeb;
+}    
 
 .arrival-date {
     margin-left: 21px;
@@ -568,6 +594,18 @@ img {
 
 .number-option {
     width: 110px;
+    height: 38px;
+    border: none;
+    outline: none;
+}
+
+.adults {
+    padding-right: 0;
+}
+
+.kids {
+    padding-left: 0;
+    margin-left: auto;
 }
 
 .adults-number {
@@ -578,11 +616,23 @@ img {
     margin-left: 25px;
 }
 
-.kids {
-    margin-left: 50px;
-}
 .search-button {
-    align-self: center;
+    
+    background-color: #81b3d2;
+    padding: 15px 140px;
+    margin-top: 40px;
+    margin-left: 55px;
+    margin-right: 55px;
+}
+    
+.search-button:hover,
+.search-button:focus {
+    background-color: #669ec0;
+}
+    
+.search-button:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #5496bd;
 }
 
 /* Внутренняя. Сетки */
