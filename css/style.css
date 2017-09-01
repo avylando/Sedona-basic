@@ -89,7 +89,6 @@ img {
 
 .page-footer {
     display: flex;
-    
     min-height: 120px;
     width: 1200px;
     margin: 0 auto;
@@ -98,7 +97,7 @@ img {
 }
 
 .footer-block {
-    width: 400px;
+    flex-basis: 100%;
     display: flex;  
     justify-content: center;
 }
