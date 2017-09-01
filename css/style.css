@@ -413,21 +413,27 @@ img {
 
  .main-navigation { 
     display: flex;
+    width: 1200px;
     min-height: 57px;
     margin: 0 auto;
 }
 
 .main-menu {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     list-style: none;
+    padding-left: 73px;
+    padding-right: 73px;
 }
 
 .main-header-logo {
+    position: absolute; 
+
     width: 140px;
     height: 70px;
-    position: absolute;  
+     
     left: 0;
     top: 0;
     right: 0;
@@ -435,8 +441,8 @@ img {
     margin: 0 auto;
 }
 
-.item-info {
-    margin-left: 106px;
+.menu-item {
+    display: inline-block;
 }
 
 .item-content{
@@ -447,9 +453,11 @@ img {
     margin-left: 390px;
 
 }
+
 .item-hotels {
-    margin-left: 162px;
+    margin-left: 160px;
 }
+
 
 /* Главная. Сетки */
 
