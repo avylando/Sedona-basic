@@ -37,7 +37,7 @@
           <div class="reason-block text-white">
             <h3 class="title reason-title text-white">Настоящий<br>городок</h3>
             <p>— №1 —</p>
-            <p>Седона — не аттракцион для туристов,<br>
+            <p class="reason-block-text">Седона — не аттракцион для туристов,<br>
             там течет своя жизнь</p>
           </div>
           <div>
@@ -46,21 +46,21 @@
         </div>
         <div class="flex-wrapper-2">
           <div class="recomendations">
-            <img src="img/icon-1.svg" width="76" height="76" alt="home-icon">
+            <img src="img/icon-1.svg" width="74" height="72" alt="home-icon">
             <h3 class="title reason-title">Жилье</h3>
-            <p>Рекомендуем пожить в настоящем<br>
+            <p class="recomendations-text">Рекомендуем пожить в настоящем<br>
             мотеле, все как в кино!</p>
           </div>
           <div class="recomendations">
-            <img src="img/icon-3.svg" width="80" height="74" alt="food-icon">
+            <img src="img/icon-3.svg" width="74" height="71" alt="food-icon">
             <h3 class="title reason-title">Еда</h3>
-            <p>Всегда заказывайте фирменный бургер,<br>
+            <p class="recomendations-text">Всегда заказывайте фирменный бургер,<br>
             вы не разочаруетесь!</p>
           </div>
           <div class="recomendations">
-            <img src="img/icon-2.svg" width="72" height="79" alt="souvenir-icon">
+            <img src="img/icon-2.svg" width="70" height="70" alt="souvenir-icon">
             <h3 class="title reason-title">Сувениры</h3>
-            <p>Не только китайского, но и местного<br>
+            <p class="recomendations-text">Не только китайского, но и местного<br>
             производства!</p>
           </div>
         </div>
@@ -71,7 +71,7 @@
           <div class="reason-block text-white">
             <h3 class="title reason-title text-white">Там есть<br>Мост Дьявола</h3>
             <p>— №2 —</p>
-            <p>Да, по нему можно пройти! Если конечно<br>
+            <p class="reason-block-text">Да, по нему можно пройти! Если конечно<br>
             вы осмелитесь</p>
           </div>
         </div>
@@ -105,16 +105,16 @@
           </div>
           <a href="#" class="button open-form title text-white">Поиск гостиницы в Седоне</a>
         </div>
-      </section>
-      <section class="modal modal-search">
-        <form class="searching-form modal-wrapper" method="get" action="https://echo.htmlacademy.ru">
+        <div class="modal modal-search">
+          <form class="searching-form" method="get" action="https://echo.htmlacademy.ru">
+            <div class="form-positioner">
               <p class="search-terms dates arrival"><label>Дата заезда:
                 <input class="date-option arrival-date" type="text"></label>
               </p>
               <p class="search-terms dates departure"><label>Дата выезда:
                 <input class="date-option departure-date" type="text"></label>
               </p>
-              <div class="modal-wrapper-1">
+              <div class="modal-wrapper">
                 <p class="search-terms adults"><label>Взрослые:
                   <input class="number-option adults-number" type="text" value="2"></label>
                 </p>
@@ -122,14 +122,17 @@
                   <input class="number-option kids-number" type="text" value="0"></label>
                 </p>
               </div>
-          <button class="button search-button title" type="submit">Найти</button>
-        </form>
+              <button class="button search-button title" type="submit">Найти</button>
+            </div>
+          </form>
+        </div>
       </section>
       <section class="map">  
           <img src="img/map.jpg" width="1200" height="593" alt="Карта Штата">
       </section>
       </main>
       <footer class="page-footer">
+        <div class="footer-positioner-index">
           <div class="footer-block hash-tag"><a class="title" href="#">#VISITSEDONA</a></div>
           <ul class="footer-block social-buttons">
             <li class="social-button twitter">
@@ -165,6 +168,7 @@
               </svg>
             </a>
           </div>
-        </footer>
+        </div>
+      </footer>
   </body>
 </html>

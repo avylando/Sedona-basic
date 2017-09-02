@@ -88,12 +88,25 @@ img {
 /* Футер */
 
 .page-footer {
-    display: flex;
-    min-height: 120px;
+    position: relative;
     width: 1200px;
     margin: 0 auto;
+}
 
-    background-color: rgba(255, 255 , 255, 0.5);
+.footer-positioner-index {
+    position: absolute;
+    bottom: 0;
+    height: 125px;
+}
+    
+.footer-positioner-index,
+.footer-positioner-hotels {
+    display: flex;
+    width: 1200px;
+    min-height: 120px;
+
+    background-color: rgba(255, 255 , 255, 0.9);
+    
 }
 
 .footer-block {
@@ -180,6 +193,10 @@ img {
 
 .reason-block {
     background-color: #81b3d2;
+}
+
+.reason-block-text {
+    margin-top: 21px;
 }
 
 .advantages {
@@ -445,7 +462,7 @@ img {
     display: flex;
     width: 1200px;
     max-height: 255px;
-    margin-top: 40px;
+    margin-top: 36px;
 }
 
 .reason-block {
@@ -459,12 +476,17 @@ img {
     display: flex;
     align-items: center;
     width: 1200px;
-    margin-top: 50px;
+    margin-top: 55px;
 }
 
 .recomendations {
-    width: 400px;
+    flex-basis: 100%;
     text-align: center;
+    
+}
+
+.recomendations-text {
+    margin-top: 20px;
 }
 
 .flex-wrapper-3 {
@@ -502,22 +524,34 @@ img {
     vertical-align: middle;
 }
 
+.map {
+}
 
 
 /*  Модальное окно */
 
-.searching-form {
-    font-weight: bold;
+.searching {
+    position: relative;
 }
 
-.modal-wrapper {
+.modal-search {
+    position: absolute;
+    height: 394px;
+    left: 315px;
+    background-color: #ffffff;
+    
+}
+
+.form-positioner {
     display: flex;
     flex-direction: column;
     width: 570px;
     margin: 0 auto;
+
+    font-weight: bold;
 }
 
-.modal-wrapper-1 {
+.modal-wrapper {
     display: flex;
 }
 
