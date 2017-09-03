@@ -1,9 +1,22 @@
 /* Общие стили */
 
+html {
+    background-color: #f2f2f2;
+}
+
 body {
     font: 14px/21px PT Sans, sans-serif;
     color: #333333;
     text-transform: uppercase;
+}
+
+.main-header, 
+.container, 
+.page-footer {
+    background-color: #ffffff;
+    width: 1200px;
+    margin: 0 auto;
+    box-shadow: 0 3px 3px 0;
 }
 
 .title {
@@ -61,10 +74,41 @@ img {
 	border: 0;
 }
 
-/* Шапка */
+/* Хэдер */
 
-.main-header {
-    background-color: #ffffff;
+.main-navigation { 
+    display: flex;
+    width: 1200px;
+    min-height: 57px;
+    margin: 0 auto;
+}
+
+.main-menu {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    width: 100%;
+    padding-left: 6%;
+    padding-right: 6%;
+}
+
+.main-header-logo {
+    position: absolute; 
+
+    width: 140px;
+    height: 70px;
+     
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0; 
+    margin: 0 auto;
+}
+
+.menu-item {
+    width: 20%;
 }
 
 .menu-item a {
@@ -85,12 +129,34 @@ img {
     opacity: 0.3;
 }
 
+.item-info,
+.item-content {
+    text-align: left;
+}
+
+.item-map,
+.item-hotels {
+    text-align: right;
+}
+
+.item-content{
+    padding-right: 95px;
+}
+
+.item-map {
+    /* margin-left: 390px; */
+
+}
+
+.item-hotels {
+    /* margin-left: 160px; */
+}
+
+
 /* Футер */
 
 .page-footer {
     position: relative;
-    width: 1200px;
-    margin: 0 auto;
 }
 
 .footer-positioner-index {
@@ -386,58 +452,6 @@ img {
     padding-bottom: 3px;
 }
 
-/* Стили сеток */
-
-
-
-/* Хэдер */
-
- .main-navigation { 
-    display: flex;
-    width: 1200px;
-    min-height: 57px;
-    margin: 0 auto;
-}
-
-.main-menu {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    list-style: none;
-    padding-left: 73px;
-    padding-right: 73px;
-}
-
-.main-header-logo {
-    position: absolute; 
-
-    width: 140px;
-    height: 70px;
-     
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0; 
-    margin: 0 auto;
-}
-
-.menu-item {
-    display: inline-block;
-}
-
-.item-content{
-    margin-left: 147px;
-}
-
-.item-map {
-    margin-left: 390px;
-
-}
-
-.item-hotels {
-    margin-left: 160px;
-}
 
 
 /* Главная. Сетки */
@@ -445,9 +459,7 @@ img {
 .container {
     display: flex;
     flex-direction: column;
-    width: 1200px;
-    margin: 0 auto;
-    padding: 0 10px;
+    padding: 0;
 }
 
 .hello-words {
@@ -634,21 +646,6 @@ img {
 
     text-align: center;
 }
-/* 
-.number-option::before {
-    content:"";
-    position: absolute;
-    display: block;
-
-    width: 12px;
-    height: 3px;
-
-    left: 5px;
-    bottom: 10px;
-
-
-    background-color: #a9a9a9;
-} */
 
 .adults {
     padding-right: 0;
@@ -692,8 +689,8 @@ img {
     display: flex;
     min-height: 216px;
     margin: 0 auto;
-    padding-right: 73px;
-    padding-left: 73px;
+    padding-right: 6%;
+    padding-left: 6%;
 }
 
 .filter {
@@ -829,8 +826,8 @@ img {
     display: flex;
     box-sizing: border-box;
     min-height: 87px;
-    padding-right: 73px;
-    padding-left: 73px;
+    padding-right: 6%;
+    padding-left: 6%;
 
     border-bottom: 1px solid #e5e5e5;
 }
@@ -874,8 +871,8 @@ img {
     display: flex;
     box-sizing: border-box;
     min-height: 151px;
-    padding-right: 73px;
-    padding-left: 73px;
+    padding-right: 6%;
+    padding-left: 6%;
 
     border-bottom: 1px solid #e5e5e5;
 }
