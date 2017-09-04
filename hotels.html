@@ -20,9 +20,8 @@
               <img src="img/logo.png" width="140" height="70" alt="Логотип Седона">
             </a>
           </nav>
-        </header>
-    </header>
-    <main class="container">
+      </header>
+      <main class="container">
         <section class="filters-menu">
           <h2 class="visually-hidden">Фильтры выбора</h2>
             <form class="form-filters text-white flex-wrapper-filters" method="get" action="https://echo.htmlacademy.ru" oninput="priceoutput.value=price.value">
@@ -45,7 +44,7 @@
               <fieldset class="filter price-per-day">
                 <legend class="form-title"><label for="price-range">Стоимость в сутки (Р):</label></legend>
                 <div class="price-controls">
-                  <label class="min-price">От <input class="price-input" type="text" name="min-price" value="0"></label>
+                  <label class="min-price">От <input class="price-input" type="text" name="min-price" value="0" id="price-range"></label>
                   <label class="max-price">до <input class="price-input" type="text" name="max-price" value="3000"></label>
                 </div>
                 <div class="range-controls">
@@ -55,7 +54,7 @@
                   <div class="range-toggle range-toggle-min"></div>
                   <div class="range-toggle range-toggle-max"></div>
                 </div>
-                <a href="result.html"><button class="button show-button" type="submit">Показать</button></a>
+                <button class="button show-button" type="submit">Показать</button>
               </fieldset>
             </form>
         </section>
@@ -145,8 +144,8 @@
             <div class="hotel-rate">Рейтинг: 9.2</div>
           </div>
         </section>
-    </main>
-    <footer class="page-footer">
+      </main>
+      <footer class="page-footer">
         <div class="footer-positioner-hotels">
           <div class="footer-block hash-tag"><a class="title" href="#">#VISITSEDONA</a></div>
           <ul class="footer-block social-buttons">
