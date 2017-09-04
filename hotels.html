@@ -7,7 +7,7 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="inner-page">
       <header class="main-header">
           <nav class="main-navigation">
             <ul class="main-menu">
@@ -55,7 +55,7 @@
                   <div class="range-toggle range-toggle-min"></div>
                   <div class="range-toggle range-toggle-max"></div>
                 </div>
-                <button class="button show-button" type="submit">Показать</button>
+                <a href="result.html"><button class="button show-button" type="submit">Показать</button></a>
               </fieldset>
             </form>
         </section>
@@ -69,8 +69,16 @@
               <li><a class="result-filter-option" href="#">По рейтингу</a></li>
             </ul>
             <div class="buttons-block">
-              <a href="#" class="scroll-up"><img src="img/icon-up-dir.svg" width="11" height="10" alt="вверх"></a>
-              <a href="#" class="scroll-down active"><img src="img/icon-down-dir.svg" width="11" height="10" alt="вниз"></a>
+              <a href="#" >
+                <svg  class="scroll scroll-up" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                  <path class="button-scroll" fill="#cacaca" d="M5.5 10L0 0h11"/>
+                </svg>
+              </a>
+              <a href="#">
+                <svg class="scroll scroll-down" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                  <path class="button-scroll active" fill="#cacaca" d="M5.5 0L0 10h11z"/>
+              </svg>
+              </a>
             </div>
           </div>
         </section>
@@ -143,7 +151,7 @@
           <div class="footer-block hash-tag"><a class="title" href="#">#VISITSEDONA</a></div>
           <ul class="footer-block social-buttons">
             <li class="social-button twitter">
-              <a class="social-button" href="#">
+              <a href="#">
                 <svg class="svg-icon-twitter" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15" viewBox="0 0 17 15">
                   <path class="svg-icon" fill="#FFF" d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z"/>
                 </svg>
@@ -163,6 +171,7 @@
                 <svg class="svg-icon-youtube" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16" viewBox="0 0 20 16">
                   <path class="svg-icon" fill="#FFF" d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z"/>
                 </svg>
+                <span class="visually-hidden">Youtube</span>
               </a>
             </li>
           </ul>
