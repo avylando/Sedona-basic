@@ -196,7 +196,6 @@ img {
 .social-button {
     display: flex;
     justify-content: center;
-    align-items: center;
     background-color: #81b3d2;
 }
 
@@ -213,20 +212,32 @@ img {
     fill: #88b6d1;
 }
 
-.twitter,
-.fb {
-    width: 47px;
-    height: 48px;
+.svg-icon-twitter {
+    padding-top: 16px;
 }
 
-.youtube {
+.svg-icon-fb {
+    padding-top: 13px;
+}
+
+.svg-icon-youtube {
+    padding-top: 16px;
+}
+
+.twitter,
+.fb {
     width: 46px;
     height: 48px;
 }
 
+.youtube {
+    width: 47px;
+    height: 48px;
+}
+
+.twitter,
 .fb {
-    margin-right: 7px;
-    margin-left: 7px;
+    margin-right: 6px;
 }
 
 .footer-copyright {
@@ -487,7 +498,9 @@ img {
 }
 
 .date-option:hover,
-.number-option:hover {
+.number-option:hover,
+.number-option-minus:hover,
+.number-option-plus:hover {
     background-color: #ebebeb;
 }
 
@@ -535,7 +548,8 @@ img {
     margin-top: 17px;
 }
 
-.number-option-minus {
+.number-option-minus,
+.number-option-plus {
     display: inline-block;
     font-size: 24px;
     line-height: 36px;
@@ -549,17 +563,7 @@ img {
 }
 
 .number-option-plus {
-    display: inline-block;
-    font-size: 24px;
-    line-height: 36px;
-    color: #a9a9a9;
-    width: 38px;
-    height: 38px;
-    box-sizing: border-box;
-    text-align: center;
-    vertical-align: bottom;
     margin-left: -4px;
-    margin-top: -3px;
 }
 
 .number-option {
@@ -663,21 +667,6 @@ img {
     background-image: url("../img/checkbox-on.svg");
 }
 
-.show-button {
-    background-color: transparent;
-    border: 2px solid #ffffff;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-}
-
-.show-button:hover,
-.show-button:focus {
-    color: #000000;
-    background-color: #ffffff;
-}
-
 .flex-wrapper-filters {
     display: flex;
     min-height: 216px;
@@ -738,11 +727,14 @@ img {
     cursor: pointer;
 }
 
-.price-controls .min-price,
-.price-controls .max-price {
+.price-controls .min-price {
     width: 90px;
     padding-left: 65px;
-    
+}
+
+.price-controls .max-price {
+    width: 90px;
+    padding-left: 57px;
 }
 
 .price-input {
@@ -801,10 +793,23 @@ img {
 
 .show-button {
     display: block;
-    margin: 0 auto;
 
     border-radius: 2px;
     outline: none;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-left: 85px;
+}
+
+.show-button:hover,
+.show-button:focus {
+    color: #000000;
+    background-color: #ffffff;
 }
 
 /* Блок сортировки */
