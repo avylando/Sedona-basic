@@ -514,16 +514,18 @@ img {
     position: relative;
 }
 
-.dates::after {
-    content: "";
+.calendar-icon {
     position: absolute;
 
-    display: block;
+    display: inline-block;
     width: 38px;
     height: 38px;
 
     right: 56px;
     bottom: 0;
+    top: 0;
+    border: none;
+    outline: none;
 
     background-color: #f2f2f2;
     background-image: url("../img/calendar.svg");
@@ -531,8 +533,8 @@ img {
     background-position: center;
 }
 
-.dates::after :hover,
-.dates::after :focus {
+.calendar-icon :hover,
+.calendar-icon :focus {
     background-color: #ebebeb;
 }    
 
@@ -736,7 +738,7 @@ img {
 }
 
 .house-type {
-    margin-left: 116px;
+    margin-left: 118px;
 }
 
 /* Фильтр цены */

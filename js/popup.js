@@ -19,6 +19,9 @@ searching.addEventListener ("click", function (evt) {
     popup.classList.toggle("modal-close");   
     arrivalDate.focus();
 
+    if (popup.classList.contains) {
+        
+    }
 
     if (storageA) {
         adultsNumber.value = storageA;
