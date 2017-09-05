@@ -16,7 +16,7 @@ var storageK = localStorage.getItem("kidsNumber");
  
 searching.addEventListener ("click", function (evt) {
     evt.preventDefault();
-    popup.classList.add("modal-close");   
+    popup.classList.toggle("modal-close");   
     arrivalDate.focus();
 
 
@@ -29,10 +29,11 @@ searching.addEventListener ("click", function (evt) {
     }
 })
 
-close.addEventListener ("click", function (evt) {
-    popup.classList.remove("modal-error");
-    popup.classList.add("modal-show");
-})
+// searching.addEventListener ("click", function (evt) {
+//     if  (arrivalDate.value || departureDate.value) {
+//         popup.classList.remove("modal-error");
+//     }
+// })
 
 form.addEventListener ("submit", function (evt) {
     if (!arrivalDate.value || !departureDate.value) {
@@ -40,6 +41,7 @@ form.addEventListener ("submit", function (evt) {
         popup.classList.add("modal-error");
         console.log("Введите даты въезда/выезда");
     } else {
+        popup.classList.remove("modal-error");
         localStorage.setItem("adultsNumber", adultsNumber.value);
         localStorage.setItem("kidsNumber", kidsNumber.value);
     }
