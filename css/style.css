@@ -682,9 +682,11 @@ img {
 }
 
 .checkbox-filter {
+    position: relative;
     list-style: none;
     margin: 0;
     line-height: 26px;
+    margin-left: 40px;
 }
 
 .filter-input:disabled, {
@@ -692,13 +694,12 @@ img {
 }
 
 .filter-option{
-    position: relative;
     left: 40px;
     padding-top: 21px;
     margin-left: -40px;
 }
 
-.filter-option::before {
+.filter-input:not(:checked) + .filter-label::before {
     content: "";
     width: 23px;
     height: 23px;
@@ -709,7 +710,7 @@ img {
     background-image: url("../img/checkbox-off.svg");
 }
 
-.filter-option-checked::before {
+.filter-input:checked + .filter-label::before {
     content: "";
     width: 26px;
     height: 23px;
