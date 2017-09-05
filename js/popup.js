@@ -19,10 +19,6 @@ searching.addEventListener ("click", function (evt) {
     popup.classList.toggle("modal-close");   
     arrivalDate.focus();
 
-    if (popup.classList.contains) {
-        
-    }
-
     if (storageA) {
         adultsNumber.value = storageA;
     } 
@@ -31,12 +27,6 @@ searching.addEventListener ("click", function (evt) {
         kidsNumber.value = storageK;
     }
 })
-
-// searching.addEventListener ("click", function (evt) {
-//     if  (arrivalDate.value || departureDate.value) {
-//         popup.classList.remove("modal-error");
-//     }
-// })
 
 form.addEventListener ("submit", function (evt) {
     if (!arrivalDate.value || !departureDate.value) {
