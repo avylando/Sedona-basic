@@ -24,11 +24,6 @@ body {
     color: #000000;  
 }
 
-.menu-item {
-    font-weight: bold;
-
-}
-
 .form-title {
     font-size: 16px;
     color: #ffffff;
@@ -107,6 +102,7 @@ img {
 }
 
 .menu-item {
+    font-weight: bold;
     width: 20%;
 }
 
@@ -153,119 +149,6 @@ img {
 .item-hotels {
     margin-left: auto;
 }
-
-
-/* Футер */
-
-.page-footer {
-    position: relative;
-}
-
-.footer-positioner-index {
-    position: absolute;
-    bottom: 0;
-    height: 127px;
-}
-    
-.footer-positioner-index,
-.footer-positioner-hotels {
-    display: flex;
-    width: 100%;
-    min-height: 120px;
-
-    background-color: rgba(255, 255 , 255, 0.9);   
-}
-
-.footer-block {
-    flex-basis: 0;
-    flex-grow: 1;
-    display: flex;  
-    justify-content: center;
-}
-
-.hash-tag {
-    margin-top: 44px;
-}
-
-.social-buttons {
-    list-style: none;
-    margin: 35px auto 0;
-    padding: 0;
-}
-
-.social-button {
-    display: flex;
-    justify-content: center;
-    background-color: #81b3d2;
-}
-
-.social-button:hover,
-.social-button:focus {
-    background-color: #669ec0;
-}
-
-.social-button:active{
-    background-color: #5496bd;
-}
-
-.svg-icon:active {
-    fill: #88b6d1;
-}
-
-.svg-icon-twitter {
-    padding-top: 16px;
-}
-
-.svg-icon-fb {
-    padding-top: 13px;
-}
-
-.svg-icon-youtube {
-    padding-top: 16px;
-}
-
-.twitter,
-.fb {
-    width: 46px;
-    height: 48px;
-}
-
-.youtube {
-    width: 47px;
-    height: 48px;
-}
-
-.twitter,
-.fb {
-    margin-right: 6px;
-}
-
-.footer-copyright {
-    margin: 0;
-    padding: 0;
-
-}
-
-.website-by {
-    margin-right: 10px;
-    margin-top: 48px;
-}
-
-.academy-svg {
-    width: 115px;
-    height: 45px;
-    margin-top: 38px; 
-}
-
-.academy-svg-path:hover,
-.academy-svg-path:focus {
-    fill: #81b3d2; 
-}
-
-.academy-svg-path:active {
-    fill: #bdbbbc;
-}
-
 
 
 /* Первая страница  */
@@ -666,10 +549,6 @@ img {
     animation-duration: 0.7s;
 }
 
-.modal-show {
-    display: block;
-}
-
 .modal-error {
     animation-name: shake;
     animation-duration: 0.6s;
@@ -714,6 +593,7 @@ img {
     display: block;
     position: absolute;
     left: -40px;
+    cursor: pointer;
 
     background-image: url("../img/checkbox-off.svg");
 }
@@ -725,9 +605,11 @@ img {
     display: block;
     position: absolute;
     left: -40px;
+    cursor: pointer;
 
     background-image: url("../img/checkbox-on.svg");
 }
+
 
 .flex-wrapper-filters {
     display: flex;
@@ -786,6 +668,7 @@ img {
 
     font-size: 14px;
     line-height: 30px;
+
     cursor: pointer;
 }
 
@@ -855,16 +738,15 @@ img {
 
 .show-button {
     display: block;
+    width: 134px;
 
     border-radius: 2px;
     outline: none;
     background-color: transparent;
     border: 2px solid #ffffff;
 
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-top: 6px;
+    padding-bottom: 6px;
     margin-left: 85px;
 }
 
@@ -886,7 +768,7 @@ img {
     border-bottom: 1px solid #e5e5e5;
 }
 
- .found-3 { 
+.found-3 { 
     padding-top: 12px;
 }
 
@@ -904,9 +786,6 @@ img {
     font-size: 12px;
     line-height: 18px;
     margin: 0;
-}
-
-.search-result-filter {
     list-style: none;
 }
 
@@ -931,7 +810,6 @@ img {
     border: none;
 }
 
-
 .result-filter-option {
     margin-right: 31px; 
 }
@@ -953,13 +831,13 @@ img {
     fill: #81b3d2;
 }
 
-.button-scroll:active {
-    fill: #81b3d2;
-}
-
 .button-scroll:hover,
 .button-scroll:focus {
     fill: #000000;
+}
+
+.button-scroll:active {
+    fill: #81b3d2;
 }
 
 /* Карточки отелей */
@@ -1063,11 +941,6 @@ img {
     color: #cacaca;
 }
 
-.stars {
-    list-style: none;
-}
-
-
 .hotel-class {
     display: flex;
     flex-direction: column;
@@ -1081,6 +954,7 @@ img {
    margin: 0;
    text-align: right;
    margin-top: 28px;
+   list-style: none;
 }
 
 .star {
@@ -1098,4 +972,115 @@ img {
     padding-right: 14px;
     padding-top: 3px;
     padding-bottom: 3px;
+}
+
+/* Футер */
+
+.page-footer {
+    position: relative;
+}
+
+.footer-positioner-index {
+    position: absolute;
+    bottom: 0;
+    height: 127px;
+}
+    
+.footer-positioner-index,
+.footer-positioner-hotels {
+    display: flex;
+    width: 100%;
+    min-height: 120px;
+
+    background-color: rgba(255, 255 , 255, 0.9);   
+}
+
+.footer-block {
+    flex-basis: 0;
+    flex-grow: 1;
+    display: flex;  
+    justify-content: center;
+}
+
+.hash-tag {
+    margin-top: 44px;
+}
+
+.social-buttons {
+    list-style: none;
+    margin: 35px auto 0;
+    padding: 0;
+}
+
+.social-button {
+    display: flex;
+    justify-content: center;
+    background-color: #81b3d2;
+}
+
+.social-button:hover,
+.social-button:focus {
+    background-color: #669ec0;
+}
+
+.social-button:active{
+    background-color: #5496bd;
+}
+
+.svg-icon:active {
+    fill: #88b6d1;
+}
+
+.svg-icon-twitter {
+    padding-top: 16px;
+}
+
+.svg-icon-fb {
+    padding-top: 13px;
+}
+
+.svg-icon-youtube {
+    padding-top: 16px;
+}
+
+.twitter,
+.fb {
+    width: 46px;
+    height: 48px;
+}
+
+.youtube {
+    width: 47px;
+    height: 48px;
+}
+
+.twitter,
+.fb {
+    margin-right: 6px;
+}
+
+.footer-copyright {
+    margin: 0;
+    padding: 0;
+
+}
+
+.website-by {
+    margin-right: 10px;
+    margin-top: 48px;
+}
+
+.academy-svg {
+    width: 115px;
+    height: 45px;
+    margin-top: 38px; 
+}
+
+.academy-svg-path:hover,
+.academy-svg-path:focus {
+    fill: #81b3d2; 
+}
+
+.academy-svg-path:active {
+    fill: #bdbbbc;
 }
