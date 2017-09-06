@@ -89,29 +89,29 @@
             вы осмелитесь</p>
           </div>
         </div>
-        <div class="flex-wrapper-4">
+        <div class="flex-wrapper-advantages">
           <div class="advantages">
             <h3 class="title reason-title">Небольшая<br>площадь</h3>
             <p class="reason-number">— №3 —</p>
-            <p>Все достопримечательности<br>
+            <p class="reason-block-text">Все достопримечательности<br>
             находятся очень близко</p>
           </div>
           <div class="advantages">
             <h3 class="title reason-title">Красивая<br>дорога</h3>
             <p class="reason-number">— №4 —</p>
-            <p>Ехать в Седону из Лас-Вегаса совсем<br>
+            <p class="reason-block-text">Ехать в Седону из Лас-Вегаса совсем<br>
             не скучно!</p>
           </div>
           <div class="advantages">
             <h3 class="title reason-title">Мало<br>туристов</h3>
             <p class="reason-number">— №5 —</p>
-            <p>Большинство едет в Гранд-Каньон и<br>
+            <p class="reason-block-text">Большинство едет в Гранд-Каньон и<br>
             толпится там</p>
           </div>
         </div>
       </section>
       <section class="searching">
-        <div class="flex-wrapper-5">
+        <div class="flex-wrapper-searching">
           <div class="invitation">
             <h2 class="title-interesting">Заинтересовались?</h2>
             <p>Укажите предполагаемые даты поездки,<br>
@@ -122,12 +122,14 @@
         <div class="modal modal-search">
           <form class="searching-form" method="get" action="https://echo.htmlacademy.ru">
             <div class="form-positioner">
-              <p class="search-terms dates arrival"><label>Дата заезда:
-                <input class="date-option arrival-date" type="text" placeholder="24 апреля 2017"></label>
+              <p class="search-terms dates arrival">
+                <label for="arrival-date">Дата заезда:</label>
+                <input class="date-option arrival-date" id="arrival-date" type="text" placeholder="24 апреля 2017">
                 <button class="calendar-icon" type="button"></button>
               </p>
-              <p class="search-terms dates departure"><label>Дата выезда:
-                <input class="date-option departure-date" type="text" placeholder="4 июля 2017"></label>
+              <p class="search-terms dates departure">
+                <label for="departure-date">Дата выезда:</label>
+                  <input class="date-option departure-date" id="departure-date" type="text" placeholder="4 июля 2017">
                 <button class="calendar-icon" type="button"></button>
               </p>
               <div class="modal-wrapper">
