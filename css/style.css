@@ -74,6 +74,10 @@ img {
 
 /* Хэдер */
 
+.main-header {
+    position: relative;
+}
+
 .main-navigation { 
     display: flex;
     width: 100%;
@@ -95,15 +99,10 @@ img {
 .main-header-logo {
     position: absolute; 
     z-index: 10;
-
     width: 140px;
     height: 70px;
-     
-    left: 0;
+    left: 530px;
     top: 0;
-    right: 0;
-    bottom: 0; 
-    margin: 0 auto;
 }
 
 .menu-item {
@@ -479,7 +478,6 @@ img {
 
 .date-option {
     box-sizing: border-box;
-    font-weight: bold;
     width: 310px;
     height: 38px;
     border: none;
@@ -616,7 +614,7 @@ img {
     background-color: #5496bd;
 }
 
-@keyframes slide{
+/* @keyframes slide{
     0% {
         transform: translateY(394px);
     }
@@ -635,7 +633,7 @@ img {
     100% {
         transform: translateY(-394px);
     }
-}
+} */
 
 @keyframes shake {
     0%,
