@@ -486,6 +486,8 @@ img {
     background-color: #5496bd;
 }
 
+/* Анимация */
+
 @keyframes slide{
     0% {
         transform: translateY(394px);
@@ -993,14 +995,22 @@ img {
 .social-button:hover,
 .social-button:focus {
     background-color: #669ec0;
+    cursor: pointer;
 }
 
 .social-button:active{
     background-color: #5496bd;
+    cursor: pointer;
 }
 
-.svg-icon:active {
+.svg-icon:active,
+.social-button:active .svg-icon {
     fill: #88b6d1;
+    cursor: pointer;
+}
+
+.svg-icon:hover {
+    cursor: pointer;
 }
 
 .svg-icon-twitter {
@@ -1048,11 +1058,20 @@ img {
     margin-top: 38px; 
 }
 
-.academy-svg-path:hover,
-.academy-svg-path:focus {
-    fill: #81b3d2; 
+.academy-svg:hover {
+    cursor: pointer;
 }
 
+.academy-svg-path:hover,
+.academy-svg-path:focus,
+.academy-svg:hover .academy-svg-path,
+.academy-svg:focus .academy-svg-path {
+    fill: #81b3d2; 
+    cursor: pointer;
+}
+
+.academy-svg:active .academy-svg-path,
 .academy-svg-path:active {
     fill: #bdbbbc;
+    cursor: pointer;
 }
