@@ -1,4 +1,4 @@
-/* РћР±С‰РёРµ СЃС‚РёР»Рё */
+/* Общие стили */
 
 html {
     background-color: #f2f2f2;
@@ -69,11 +69,7 @@ img {
 	border: 0;
 }
 
-/* РҐСЌРґРµСЂ */
-
-.main-header {
-    position: relative;
-}
+/* Хэдер */
 
 .main-navigation { 
     display: flex;
@@ -98,8 +94,11 @@ img {
     z-index: 10;
     width: 140px;
     height: 70px;
-    left: 531px;
+    left: 0;
     top: 0;
+    right: 0;
+    bottom: 0; 
+    margin: 0 auto;
 }
 
 .menu-item {
@@ -152,7 +151,7 @@ img {
 }
 
 
-/* РџРµСЂРІР°СЏ СЃС‚СЂР°РЅРёС†Р°  */
+/* Первая страница  */
 
 .container {
     display: flex;
@@ -313,8 +312,8 @@ img {
     margin-top: 35px;
     padding-top: 31px; 
     padding-bottom: 31px; 
-    padding-left: 139px; 
-    padding-right: 139px; 
+    padding-left: 140px; 
+    padding-right: 140px; 
 }
 
 .open-form:hover,
@@ -327,7 +326,7 @@ img {
     background-color: #503e33;
 }
 
-/*  РњРѕРґР°Р»СЊРЅРѕРµ РѕРєРЅРѕ */
+/*  Модальное окно */
 
 .searching {
     position: relative;
@@ -343,7 +342,7 @@ img {
 .form-positioner {
     display: flex;
     flex-direction: column;
-    width: 568px;
+    width: 570px;
     margin: 0 auto;
     font-weight: bold;
 }
@@ -367,6 +366,7 @@ img {
 
 .date-option {
     box-sizing: border-box;
+    font-weight: bold;
     width: 310px;
     height: 38px;
     border: none;
@@ -498,7 +498,7 @@ img {
     background-color: #5496bd;
 }
 
-/* РђРЅРёРјР°С†РёСЏ */
+/* Анимация */
 
 @keyframes slide{
     0% {
@@ -519,7 +519,7 @@ img {
     100% {
         transform: translateY(-394px);
     }
-} */
+}
 
 @keyframes shake {
     0%,
@@ -554,7 +554,7 @@ img {
     animation-duration: 0.6s;
 }
 
-/* РЎС‚СЂР°РЅРёС†Р° РѕС‚РµР»РµР№ */
+/* Страница отелей */
 
 .filters-menu {
     background-image: url("../img/filter-background.jpg"); 
@@ -635,7 +635,7 @@ img {
     margin-left: 118px;
 }
 
-/* Р¤РёР»СЊС‚СЂ С†РµРЅС‹ */
+/* Фильтр цены */
 
 .price-per-day .form-title {
     padding-left: 2px;
@@ -754,7 +754,7 @@ img {
     background-color: #ffffff;
 }
 
-/* Р‘Р»РѕРє СЃРѕСЂС‚РёСЂРѕРІРєРё */
+/* Блок сортировки */
 
 .sorting-wrapper {
     display: flex;
@@ -841,7 +841,7 @@ img {
     fill: #81b3d2;
 }
 
-/* РљР°СЂС‚РѕС‡РєРё РѕС‚РµР»РµР№ */
+/* Карточки отелей */
 
 .hotel-card {
     display: flex;
@@ -973,7 +973,7 @@ img {
     padding-bottom: 3px;
 }
 
-/* Р¤СѓС‚РµСЂ */
+/* Футер */
 
 .page-footer {
     position: relative;
