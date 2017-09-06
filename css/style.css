@@ -782,7 +782,7 @@ img {
 
 .search-result-filter {
     display: flex;
-    align-items: center;
+    padding-top: 35px;
     font-size: 12px;
     line-height: 18px;
     margin: 0;
@@ -811,14 +811,18 @@ img {
 }
 
 .result-filter-option {
-    margin-right: 31px; 
+    margin-right: 32px; 
+}
+
+.filter-option-type {
+    margin-right: 33px;
 }
 
 .buttons-block {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 0;
+    padding-top: 35px;
     width: 35px;
     margin-left: auto;
 }
@@ -876,7 +880,7 @@ img {
 
 .hotel-type {
     display: inline-block;
-    width: 114px;
+    width: 116px;
     margin-top: 8px;
 }
 
@@ -888,11 +892,11 @@ img {
 .details-button {
     display: inline-block;
     margin-top: 14px;
-    margin-right: 3px;
+    margin-right: 2px;
     font-weight: bold;
     background-color: #81b3d2;
-    padding-left: 16px; 
-    padding-right: 16px;
+    padding-left: 17px; 
+    padding-right: 17px;
     padding-top: 3px;
     padding-bottom: 3px;
 }
@@ -912,8 +916,8 @@ img {
     margin-top: 14px;
     font-weight: bold;
     background-color: #766357;
-    padding-left: 18px; 
-    padding-right: 18px;
+    padding-left: 17px; 
+    padding-right: 17px;
     padding-top: 3px;
     padding-bottom: 3px;
 }
