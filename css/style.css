@@ -568,10 +568,18 @@ img {
     color: #6a6a6a;
 }
 
-.filter-option{
+.filter-option {
     left: 40px;
-    padding-top: 21px;
+    padding-top: 19px;
     margin-left: -40px;
+}
+
+.first-option {
+    padding-top: 23px;
+}
+
+.house-type .filter-label {
+    padding-left: 2px;
 }
 
 .filter-input:not(:checked) + .filter-label::before {
@@ -616,6 +624,10 @@ img {
 }
 
 /* Фильтр цены */
+
+.price-per-day .form-title {
+    padding-left: 2px;
+}
 
 .price-per-day {
     width: 318px;
