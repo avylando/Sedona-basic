@@ -5,7 +5,9 @@ html {
 }
 
 body {
-    font: 14px/21px "PT Sans", sans-serif;
+    font-size: 14px;
+    line-height:21px;
+    font-family: "PT Sans", "Tahoma", sans-serif;
     color: #333333;
     text-transform: uppercase;
 }
@@ -90,10 +92,8 @@ img {
 .main-header-logo {
     position: absolute; 
     z-index: 10;
-
     width: 140px;
     height: 70px;
-     
     left: 0;
     top: 0;
     right: 0;
@@ -166,11 +166,9 @@ img {
 .greeting::after {
     position: absolute;
     content: "";
-
     width: 100%;
     height: 61px;
     top: 450px;
-
     background-image: url("../img/main-mask.png");
     background-repeat: no-repeat;
 }
@@ -199,9 +197,7 @@ img {
     flex-basis: 0;
     flex-grow: 1;
     text-align: center;
-    
     max-height: 256px;
-
     background-color: #81b3d2;
 }
 
@@ -279,7 +275,6 @@ img {
     flex-basis: 0;
     flex-grow: 1;
     text-align: center;
-
     background-color: #eeeeee;
 }
 
@@ -302,7 +297,6 @@ img {
     line-height: 36px;
     margin: 0;
     margin-bottom: 27px;
-    
 }
 
 .open-form{
@@ -335,7 +329,6 @@ img {
     height: 394px;
     left: 315px;
     background-color: #ffffff;
-    
 }
 
 .form-positioner {
@@ -343,7 +336,6 @@ img {
     flex-direction: column;
     width: 570px;
     margin: 0 auto;
-
     font-weight: bold;
 }
 
@@ -367,7 +359,6 @@ img {
     height: 38px;
     border: none;
     outline: none;
-
     font: inherit;
     text-transform: inherit;
     text-indent: 12px;
@@ -399,17 +390,14 @@ img {
 
 .calendar-icon {
     position: absolute;
-
     display: inline-block;
     width: 38px;
     height: 38px;
-
     right: 56px;
     bottom: 0;
     top: 0;
     border: none;
     outline: none;
-
     background-color: #f2f2f2;
     background-image: url("../img/calendar.svg");
     background-repeat: no-repeat;
@@ -481,7 +469,6 @@ img {
 }
 
 .search-button {
-    
     background-color: #81b3d2;
     padding: 15px 140px;
     margin-top: 40px;
@@ -544,7 +531,6 @@ img {
 
 .modal-close {
     display: none;
-
     animation-name: slide;
     animation-duration: 0.7s;
 }
@@ -594,7 +580,6 @@ img {
     position: absolute;
     left: -40px;
     cursor: pointer;
-
     background-image: url("../img/checkbox-off.svg");
 }
 
@@ -606,7 +591,6 @@ img {
     position: absolute;
     left: -40px;
     cursor: pointer;
-
     background-image: url("../img/checkbox-on.svg");
 }
 
@@ -638,28 +622,22 @@ img {
 
 .price-controls {
     position: relative;
-
     max-height: 33px;
     margin-top: 10px;
     margin-bottom: 20px;
-
     font-size: 0;
-
     border: 2px solid #ffffff;
     border-radius: 2px;
 }
 
 .price-controls::after {
     position: absolute;
-
     content: "";
     width: 2px;
     height: 22px;
     top: 50%;
     left: 50%;
-
     transform: translate(-50%,-50%);
-
     background-color: #ffffff;
 }
 
@@ -685,10 +663,8 @@ img {
 .price-input {
     width: 50px;
     margin: 0;
-    
     color: inherit;
     font: inherit;
-
     background: none;
     border: none;
     outline: none;
@@ -707,7 +683,6 @@ img {
 .range-controls .bar {
     width: 80%;
     height: 2px;
-
     background-color: #ffffff;
 }
 
@@ -716,7 +691,6 @@ img {
     top: -9px;
     width: 4px;
     height: 4px;
-
     background-color: #ababab;
     border: 8px solid #ffffff;
     border-radius: 50%;
@@ -739,12 +713,10 @@ img {
 .show-button {
     display: block;
     width: 134px;
-
     border-radius: 2px;
     outline: none;
     background-color: transparent;
     border: 2px solid #ffffff;
-
     padding-top: 6px;
     padding-bottom: 6px;
     margin-left: 85px;
@@ -764,7 +736,6 @@ img {
     min-height: 87px;
     padding-right: 6%;
     padding-left: 6%;
-
     border-bottom: 1px solid #e5e5e5;
 }
 
@@ -852,7 +823,6 @@ img {
     min-height: 151px;
     padding-right: 6%;
     padding-left: 6%;
-
     border-bottom: 1px solid #e5e5e5;
 }
 
@@ -970,7 +940,6 @@ img {
     width: 112px;
     margin-left: auto;
     margin-bottom: 30px;
-
     background-color: #f2f2f2;
     padding-left: 14px; 
     padding-right: 14px;
@@ -995,7 +964,6 @@ img {
     display: flex;
     width: 100%;
     min-height: 120px;
-
     background-color: rgba(255, 255 , 255, 0.9);   
 }
 
