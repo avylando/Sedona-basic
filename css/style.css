@@ -576,7 +576,7 @@ img {
     margin-left: 40px;
 }
 
-.filter-input:disabled, {
+.filter-input:disabled {
     color: #6a6a6a;
 }
 
