@@ -1,4 +1,4 @@
-/* Общие стили */
+/* ����� ����� */
 
 html {
     background-color: #f2f2f2;
@@ -70,7 +70,7 @@ img {
 	border: 0;
 }
 
-/* Хэдер */
+/* ����� */
 
 .main-header {
     position: relative;
@@ -162,7 +162,7 @@ img {
 }
 
 
-/* Главная страница  */
+/* ������� ��������  */
 
 .container {
     display: -webkit-box;
@@ -229,7 +229,7 @@ img {
         -ms-flex-positive: 1;
             flex-grow: 1;
     text-align: center;
-    max-height: 256px;
+    min-height: 255px;
     background-color: #81b3d2;
 }
 
@@ -328,13 +328,14 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    padding-top: 28px;
+    padding-bottom: 46px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     width: 100%;
-    padding-top: 28px;
-    padding-bottom: 46px;
     background-color: #eeeeee;
+    z-index: 100;
 }
 
 .advantages {
@@ -407,7 +408,7 @@ img {
     background-color: #503e33;
 }
 
-/*  Модальное окно */
+/*  ��������� ���� */
 
 .searching {
     position: relative;
@@ -457,7 +458,7 @@ img {
             box-sizing: border-box;
     width: 310px;
     height: 38px;
-    border: 2px solid #e5e5e5;
+    border: 2px solid #f2f2f2;
     outline: none;
     font: inherit;
     text-transform: inherit;
@@ -472,7 +473,11 @@ img {
 }
 
 .date-option:hover,
-.number-option:hover,
+.number-option:hover {
+    background-color: #ebebeb;
+    border: 2px solid #ebebeb;
+}
+
 .number-option-minus:hover,
 .number-option-plus:hover {
     background-color: #ebebeb;
@@ -481,6 +486,7 @@ img {
 .date-option:focus,
 .number-option:focus {
     background-color: #ffffff;
+    border: 2px solid #e5e5e5;
 }
 
 .dates {
@@ -594,9 +600,9 @@ img {
 .search-button {
     font-family: inherit;
     padding: 15px 140px;
-    margin-top: 41px;
-    margin-left: 55px;
-    margin-right: 55px;
+    margin-top: 55px;
+    margin-left: 57px;
+    margin-right: 54px;
     background-color: #81b3d2;
 }
     
@@ -616,59 +622,39 @@ img {
     background-image: url("../img/map.jpg");
 }
 
-/* Анимация */
+/* �������� */
+
 
 @-webkit-keyframes slide{
     0% {
-        -webkit-transform: translateY(394px);
-                transform: translateY(394px);
+        -webkit-transform: translateY(-400px);
+                transform: translateY(-400px);
+        opacity: 0;
     }
-    20% {
-        -webkit-transform: translateY(310px);
-                transform: translateY(310px);
-    }
-    40% {
-        -webkit-transform: translateY(230px);
-                transform: translateY(230px);
-    }
-    60% {
-        -webkit-transform: translateY(120px);
-                transform: translateY(120px);
-    }
-    80% {
-        -webkit-transform: translateY(70px);
-                transform: translateY(70px);
+    50% {
+        opacity: 0;
     }
     100% {
-        -webkit-transform: translateY(-394px);
-                transform: translateY(-394px);
+        -webkit-transform: translateY(0px);
+                transform: translateY(0px);
+        opacity: 1;
     }
 }
 
+
 @keyframes slide{
     0% {
-        -webkit-transform: translateY(394px);
-                transform: translateY(394px);
+        -webkit-transform: translateY(-400px);
+                transform: translateY(-400px);
+        opacity: 0;
     }
-    20% {
-        -webkit-transform: translateY(310px);
-                transform: translateY(310px);
-    }
-    40% {
-        -webkit-transform: translateY(230px);
-                transform: translateY(230px);
-    }
-    60% {
-        -webkit-transform: translateY(120px);
-                transform: translateY(120px);
-    }
-    80% {
-        -webkit-transform: translateY(70px);
-                transform: translateY(70px);
+    50% {
+        opacity: 0;
     }
     100% {
-        -webkit-transform: translateY(-394px);
-                transform: translateY(-394px);
+        -webkit-transform: translateY(0px);
+                transform: translateY(0px);
+        opacity: 1;
     }
 }
 
@@ -722,12 +708,16 @@ img {
     }
 }
 
-.modal-close {
-    display: none;
+.modal-show {
     -webkit-animation-name: slide;
             animation-name: slide;
-    -webkit-animation-duration: 0.7s;
-            animation-duration: 0.7s;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+
+}
+
+.modal-close {
+    visibility: hidden;
 }
 
 .modal-error {
@@ -737,7 +727,7 @@ img {
             animation-duration: 0.6s;
 }
 
-/* Страница отелей */
+/* �������� ������ */
 
 .filters-menu {
     background-image: url("../img/filter-background.jpg"); 
@@ -818,7 +808,7 @@ img {
     margin-left: 118px;
 }
 
-/* Фильтр цены */
+/* ������ ���� */
 
 .price-per-day .form-title {
     padding-left: 2px;
@@ -941,7 +931,7 @@ img {
     background-color: #ffffff;
 }
 
-/* Блок сортировки */
+/* ���� ���������� */
 
 .sorting-wrapper {
     display: -webkit-box;
@@ -1037,7 +1027,7 @@ img {
     fill: #81b3d2;
 }
 
-/* Карточки отелей */
+/* �������� ������ */
 
 .hotel-card {
     display: -webkit-box;
@@ -1196,7 +1186,7 @@ img {
     padding-bottom: 3px;
 }
 
-/* Футер */
+/* ����� */
 
 .page-footer {
     position: relative;
