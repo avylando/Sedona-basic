@@ -154,7 +154,7 @@ img {
 }
 
 .item-map {
-    margin-left: 75px;
+    margin-left: 74px;
 }
 
 .item-hotels {
@@ -490,6 +490,9 @@ img {
 
 .choose-date {
     position: absolute;
+    /* display: inline-block;
+    text-align: center;
+    vertical-align: middle; */
     width: 38px;
     height: 38px;
     right: 56px;
@@ -498,6 +501,11 @@ img {
     border: none;
     outline: none;
     background-color: #f2f2f2;
+}
+
+.calendar-svg {
+    margin-left: 3px;
+    margin-top: 3px;
 }
 
 .calendar-icon:hover,
@@ -595,7 +603,7 @@ img {
 .search-button {
     font-family: inherit;
     padding: 15px 140px;
-    margin-top: 41px;
+    margin-top: 55px;
     margin-left: 55px;
     margin-right: 55px;
     background-color: #81b3d2;
