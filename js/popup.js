@@ -15,9 +15,15 @@ var storageK = localStorage.getItem("kidsNumber");
 
  
 searching.addEventListener ("click", function (evt) {
-    evt.preventDefault();
-    popup.classList.toggle("modal-close");   
+    evt.preventDefault();   
+    popup.classList.toggle("modal-close");
     arrivalDate.focus();
+
+    if (popup.classList.contains("modal-close")) {
+        popup.classList.remove("modal-show");
+    } else {
+        popup.classList.add("modal-show"); 
+    }
 
     if (storageA) {
         adultsNumber.value = storageA;
